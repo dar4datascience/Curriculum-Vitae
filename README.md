@@ -18,7 +18,9 @@ Repository for automating CV generation on-demand.
 ## Assets
 
  - CV in pdf
- - Scripts
+ - CV as an html
+ - R Scripts
+ - css file
  - README
 
 ## References

@@ -88,7 +88,7 @@ Disclaimer {#disclaimer}
 
 Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
 
-The source code is available [on github.com/nstrayer/cv](https://github.com/nstrayer/cv).
+The source code is available [on github.com/dar4datascience/Curriculum-Vitae](https://github.com/dar4datascience/Curriculum-Vitae).
 
 Last updated on `r Sys.Date()`.
 
@@ -155,11 +155,7 @@ CV %<>% print_section('teaching_positions')
 Selected Data Science Writing {data-icon=chart-line}
 --------------------------------------------------------------------------------
 
-::: aside
-```{r}
-CV %<>% print_text_block('data_science_writing_aside')
-```
-:::
+
 
 ```{r}
 CV %<>% print_section('data_science_writings')
