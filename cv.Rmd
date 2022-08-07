@@ -59,9 +59,9 @@ datadrivencv::build_network_logo(CV$entries_data)
 
 ```{r}
 if(params$pdf_mode){
-  cat("View this CV online with links at _nickstrayer.me/cv/_")
+  cat("View online <i class='fas fa-globe'></i> at [dar4datascience.github.io](https://dar4datascience.github.io/Curriculum-Vitae/)")
 } else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/nstrayer/cv/raw/master/strayer_cv.pdf)")
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://raw.githubusercontent.com/dar4datascience/Curriculum-Vitae/main/dar_cv.pdf)")
 }
 ```
 
@@ -97,7 +97,7 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Daniel Amieva Rodriguez {#title}
+Daniel Amieva Rodriguez (BETA FILE) {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -116,12 +116,6 @@ CV %<>% print_section('education')
 
 Industry Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
-
-::: aside
-```{r}
-CV %<>% print_text_block('industy_experience_aside')
-```
-:::
 
 ```{r}
 CV %<>% print_section('industry_positions')

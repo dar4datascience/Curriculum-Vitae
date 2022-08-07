@@ -12,7 +12,7 @@ Repository for automating CV generation on-demand.
       B-->C[GoogleSheets4 R];
       C-->D[Render CV using Vitae package];
       D-->E[Customize CV with datadrivencv]
-      E-->F[Automate to render a website];
+      E-->F[Automate and deploy a website with downloadable PDF];
 ```
 
 ## Assets

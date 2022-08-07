@@ -28,7 +28,9 @@ print("hellow im here 1")
 # Knit the HTML version
 rmarkdown::render("cv.Rmd",
                   params = list(pdf_mode = FALSE, cache_data = cache_data),
-                  output_file = "index.html")
+                  output_file = 
+                    here::here("docs","index.html")
+)
 
 print("hellow im here 2")
 # Knit the PDF version to temporary html location
