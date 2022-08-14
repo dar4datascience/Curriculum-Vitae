@@ -6,3 +6,5 @@ renv/
 cv-master/
 .secrets
 .Renviron
+resume.Rmd
+resume.html
