@@ -230,6 +230,7 @@ print_skill_bars <- function(cv, out_of = 5, bar_color = "#969696", bar_backgrou
   }
   cv$skills %>%
     dplyr::mutate(width_percent = round(100*as.numeric(level)/out_of)) %>%
+    dplyr::arrange(desc(width_percent)) %>% 
     glue::glue_data(glue_template) %>%
     print()
 
