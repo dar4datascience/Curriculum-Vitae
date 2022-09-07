@@ -2,6 +2,12 @@
 
 Repository for automating CV generation on-demand.
 
+You can see the lastest version of my CV @[this github pages link](https://dar4datascience.github.io/Curriculum-Vitae/)
+
+## Objective
+
+Simplify the CV generation process by linking a live Google Sheets with the complete information into a process that curates the data and publishes that information into handy formats.
+
 ## Workflow
 
 
@@ -26,6 +32,6 @@ Repository for automating CV generation on-demand.
 ## References
 
  - [Data driven CVs](https://github.com/nstrayer/datadrivencv)
- - [Vitae Package].....
- - [Tutorial of Vitae by the Author NAME....].....
- - [R Ladies Meetup about the datadrivencv package]()
+ - [Vitae Package](https://pkg.mitchelloharawild.com/vitae/)
+ - [Tutorial of the Vitae Packge](https://www.youtube.com/watch?v=cMlRAiQUdD8&t=1929s)
+ - [R Ladies Meetup about the datadrivencv package](https://www.youtube.com/watch?v=Fc1RwRskk08&t=3467s)
