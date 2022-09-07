@@ -97,7 +97,7 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Daniel Amieva Rodriguez (BETA FILE) {#title}
+Daniel Amieva Rodriguez {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -121,72 +121,10 @@ CV %<>% print_section('education')
 ```
 
 
-
-Research Experience {data-icon=laptop}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('research_positions')
-```
-
-
-
-
 <!-- These breaks just force a new page so section doesnt get cut off -->
 <br>
 <br>
 <br>
-
-Teaching Experience {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
-
-
-```{r}
-CV %<>% print_section('teaching_positions')
-```
-
-
-
-Selected Data Science Writing {data-icon=chart-line}
---------------------------------------------------------------------------------
-
-
-
-```{r}
-CV %<>% print_section('data_science_writings')
-```
-
-
-
-Selected Press (About)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('about_me_press')
-```
-
-
-<br>
-<br>
-
-
-Selected Press (By)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('by_me_press')
-```
-
-
-
-Selected Publications, Posters, and Talks {data-icon=book}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('academic_articles')
-```
-
-
 
 ```{r}
 CV %<>% print_links()

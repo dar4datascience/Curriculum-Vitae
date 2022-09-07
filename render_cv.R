@@ -26,7 +26,7 @@ cache_data <- TRUE
 print("hellow im here 1")
 
 # Knit the HTML version
-rmarkdown::render("cv.Rmd",
+rmarkdown::render("CV_job.Rmd",
                   params = list(pdf_mode = FALSE, cache_data = cache_data),
                   output_file = 
                     here::here("docs","index.html")
@@ -35,7 +35,7 @@ rmarkdown::render("cv.Rmd",
 print("hellow im here 2")
 # Knit the PDF version to temporary html location
 tmp_html_cv_loc <- fs::file_temp(ext = ".html")
-rmarkdown::render("cv.Rmd",
+rmarkdown::render("CV_job.Rmd",
                   params = list(pdf_mode = TRUE, cache_data = cache_data),
                   output_file = tmp_html_cv_loc)
 print("hellow im here 3")
