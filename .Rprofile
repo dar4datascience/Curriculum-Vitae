@@ -1,6 +1,3 @@
 source("renv/activate.R")
 options(gargle_oauth_email = "amievarodriguez.daniel@gmail.com")
-library(googlesheets4)
-gs4_auth(email='amievarodriguez.daniel@gmail.com')
-print("At start, render the CV to be up to date with changes in Gsheets file")
-source("render_cv.R")
+
