@@ -74,7 +74,7 @@ CV %>% print_contact_info()
 
 
 
-Language Skills {#skills}
+Tech Skills {#skills data-icon=globe}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -105,7 +105,7 @@ Daniel Amieva Rodriguez {#title}
 CV %<>% print_text_block("intro") 
 ```
 
-Industry Experience {data-icon=industry}
+Relevant Industry Experience {data-icon=industry}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -113,7 +113,7 @@ CV %<>% print_section('industry_positions')
 ```
 
 
-Education {data-icon=university data-concise=true}
+Relevant Education {data-icon=university data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
