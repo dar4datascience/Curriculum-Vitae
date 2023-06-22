@@ -59,11 +59,18 @@ datadrivencv::build_network_logo(CV$entries_data)
 
 ```{r}
 if(params$pdf_mode){
-  cat("View this CV online <i class='fas fa-globe'></i> at [dar4datascience.github.io](https://dar4datascience.github.io/Curriculum-Vitae/)")
+  cat("View online <i class='fas fa-globe'></i> at [dar4datascience.github.io](https://dar4datascience.github.io/Curriculum-Vitae/)")
 } else {
-  cat("[<i class='fas fa-download'></i> Download a PDF copy of this CV](https://raw.githubusercontent.com/dar4datascience/Curriculum-Vitae/main/dar_cv.pdf)")
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://raw.githubusercontent.com/dar4datascience/Curriculum-Vitae/main/dar_cv.pdf) ")
 }
+
 ```
+
+```{r}
+
+cat("See the full list of my <i class='fa-solid fa-certificate'></i> certifications @[dar-4-ds/details/certifications/](https://www.linkedin.com/in/dar-4-ds/details/certifications/)")
+```
+
 
 Contact {#contact}
 --------------------------------------------------------------------------------

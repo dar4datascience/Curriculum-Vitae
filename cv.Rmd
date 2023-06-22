@@ -63,6 +63,8 @@ if(params$pdf_mode){
 } else {
   cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://raw.githubusercontent.com/dar4datascience/Curriculum-Vitae/main/dar_cv.pdf)")
 }
+
+cat("<i class='fa-solid fa-certificate'>See the complete full list of my certifications @[dar-4-ds/details/certifications/](https://www.linkedin.com/in/dar-4-ds/details/certifications/)</i>")
 ```
 
 Contact {#contact}
