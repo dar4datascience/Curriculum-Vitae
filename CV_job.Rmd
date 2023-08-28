@@ -20,6 +20,10 @@ knitr::opts_chunk$set(
 )
 
 library(magrittr) # For the pipe
+library(dplyr)
+library(tidyr)
+library(forcats)
+library(ggplot2)
 source("CV_printing_functions.R")
 
 # Read in all data and initialize a CV printer object
@@ -50,12 +54,81 @@ if(params$pdf_mode) {
 Aside
 ================================================================================
 
-```{r}
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
 # Build interactive network of positions colored by section
 # and connected if they occurred in the same year
-datadrivencv::build_network_logo(CV$entries_data)
+#datadrivencv::build_network_logo(CV$entries_data)
+# Create the data
+data <- data.frame(
+  "Type of Data Professional" = "Data Engineer",
+  "Data Pipelines" = 9,
+  "Database" = 9,
+  "Data Viz" = 6,
+  #"Storytelling" = 2,
+  "Business Insights" = 7,
+  "Reporting" = 8,
+  #"Experimentation" = 2,
+  #"Stats" = 3,
+  "ML Deployment" = 6
+)
+
+data_prep_tbl <- data %>%
+  rename(type = 1) %>%
+  pivot_longer(
+    cols = -type
+  ) %>%
+  mutate(
+    type = as_factor(type),
+    name = as_factor(name)
+  )
+
+# The trick
+coord_radar <- function (theta = "x", start = 0, direction = 1, clip = "on") {
+  theta <- match.arg(theta, c("x", "y"))
+  r <- if (theta == "x") "y" else "x"
+  ggproto("CordRadar", CoordPolar, theta = theta, r = r, start = start,
+          direction = sign(direction), clip = clip,
+          is_linear = function(coord) TRUE)
+}
+
+# Creating the radar plot
+basic_radar_plot <- data_prep_tbl %>%
+  ggplot(aes(name, value, group = type)) +
+  geom_polygon(aes(fill = type, color = type), alpha = 0.25) +
+  geom_point(aes(color = type)) + 
+  scale_y_continuous(limits = c(-1, 13), breaks = c(0, 2.5, 5, 7.5, 10)) +
+  coord_radar(start = -0.3, clip = "off")
+
+# Apply styling and additional theming
+styled_plot <- basic_radar_plot +
+  theme_minimal() +
+  scale_fill_manual(values = c("navyblue")) +
+  scale_color_manual(values = c("navyblue")) +
+  labs(
+    legend = NULL,
+    x = NULL,
+    y = NULL
+  ) +
+  theme(
+    plot.background = element_rect(fill = "#F7FBFF", color = NA),  # Set background color and remove border
+    panel.border = element_blank(),  # Remove panel border around the entire plot
+    legend.position = "none",
+    axis.text.y = element_blank(),
+    axis.text.x = element_text(
+      vjust = -1,
+      size = 14
+    ),
+    panel.spacing = unit(50, "points"),
+    panel.grid.minor = element_blank(),
+    panel.grid.major.y = element_line(colour = c(rep("#ebebeb", 5), NA)),
+    axis.text = element_text(size = 18)
+  )
+
+# Save the plot with width set to 
+ggsave("radar_plot.png", styled_plot, width = 7, height = 7)
 ```
 
+<img src="radar_plot.png" alt="Radar Plot" style="width: 100%; height: auto;">
 
 ```{r}
 if(params$pdf_mode){
@@ -92,10 +165,6 @@ CV %>% print_skill_bars()
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
-
-Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
-
-The source code is available [on github.com/dar4datascience/Curriculum-Vitae](https://github.com/dar4datascience/Curriculum-Vitae).
 
 Last updated on `r Sys.Date()`.
 
