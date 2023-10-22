@@ -60,16 +60,16 @@ Aside
 #datadrivencv::build_network_logo(CV$entries_data)
 # Create the data
 data <- data.frame(
-  "Type of Data Professional" = "Data Engineer",
-  "Data Pipelines" = 9,
-  "Database" = 9,
-  "Data Viz" = 6,
-  #"Storytelling" = 2,
-  "Business Insights" = 7,
-  "Reporting" = 8,
+  "Type of Data Professional" = "B.I Engineer",
+  "Business Insights" = 10,
+    "Storytelling" = 8,
+  "Data Pipelines" = 8,
+  "Databases" = 8,
+  "Data Viz" = 8,
+  "Reporting" = 9
   #"Experimentation" = 2,
   #"Stats" = 3,
-  "ML Deployment" = 6
+ # "ML Deployment" = 6
 )
 
 data_prep_tbl <- data %>%
