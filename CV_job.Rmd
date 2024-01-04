@@ -60,13 +60,13 @@ Aside
 #datadrivencv::build_network_logo(CV$entries_data)
 # Create the data
 data <- data.frame(
-  "Type of Data Professional" = "B.I Engineer",
-  "Business Acumen" = 9,
-    "Storytelling" = 8,
+  "Type of Data Professional" = "Data Architect",
+  "Data Modelling" = 9,
+    "Reporting" = 8,
   "Cloud Experience" = 8,
   
   "Data Engineering" = 8,
-  "Git" = 8,
+  "Business Acumen" = 8,
   "Automation" = 9
   #"Experimentation" = 2,
   #"Stats" = 3,
