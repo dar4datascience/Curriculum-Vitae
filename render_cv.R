@@ -16,7 +16,7 @@ here::i_am("render_cv.R")
 business_intelligence <- "https://docs.google.com/spreadsheets/d/1UjkIAPFN03q1RJCrNoULZnE_4wDZFZ-CZHH4KFFRz6M/edit#gid=917338460"
 
 data_architect <- "https://docs.google.com/spreadsheets/d/15es-Gf2azekVcz58K1b7mlIEi6zXV_AG0-4W0L9Kk3o/edit#gid=917338460"
-
+ 
 data_engineer <- "https://docs.google.com/spreadsheets/d/19EKkQJCjJMKNG2K6-eQ-Ai8uH4zRKhJO6WN8VcBHTAo/edit#gid=917338460"
 
 
