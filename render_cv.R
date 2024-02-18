@@ -21,7 +21,7 @@ data_engineer <- "https://docs.google.com/spreadsheets/d/19EKkQJCjJMKNG2K6-eQ-Ai
 
 
 cv_data <- create_CV_object(
-  data_location = business_intelligence,
+  data_location = data_engineer,
   cache_data = FALSE,
   sheet_is_publicly_readable = FALSE
 )

@@ -8,3 +8,5 @@ cv-master/
 .Renviron
 resume.Rmd
 resume.html
+
+/.quarto/
