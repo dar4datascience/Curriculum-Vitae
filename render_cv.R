@@ -47,5 +47,8 @@ rmarkdown::render("CV_job.Rmd",
 print("hellow im here 3")
 # Convert to PDF using Pagedown
 pagedown::chrome_print(input = tmp_html_cv_loc,
+                       async = FALSE,
                        output = "danielamievarodriguez_cv.pdf")
+
+
 print("hellow im here 4")
