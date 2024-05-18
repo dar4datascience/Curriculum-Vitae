@@ -1,27 +1,27 @@
 ---
 author: Daniel Amieva Rodriguez
-title: Data Developer
 format:
   classic-cv-pdf: default
 cvfooter:
   left: "what? date of render"
   right: "github.com/dar4datascience"
-cvcolor: 58748F #without `#`
+cvcolor: 4b0082 # electric indigo 6f00ff # han purple 5218fa
 cvfont: comfortaa #texlive fonts like raleway,fetamont,gillius,comfortaa
 cvmeta:
-  - title: Status
-    left: Team Lead for Transparent Social Analytics, GESIS
+  - title: Current Role
+    left: Senior Data Developer @ Rackspace
     right: Mexico City, Mexico
   - title: Techs
-    left: R, bash, Python, javascript, Lua
-    right: mi@mail.com
+    left: "`r params$skills`" 
+    right: "`r params$contact_info`" 
 execute:
   echo: false
 params:
   work_entries: data.frame()
   education_entries: data.frame()
-  introduction: "`r character()`"
-  contact_info: data.frame()
+  skills: "R, bash, Python, javascript, Lua"
+  introduction: !expr paste("WOw","UwU", "WHo am I?")
+  contact_info: "mi@mail.com"
 ---
 
 ```{r}
