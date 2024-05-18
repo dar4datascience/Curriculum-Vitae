@@ -25,7 +25,7 @@ list_files_in_remote <- function(remote_name){
 
 synch_local_2_remote <- function(dryrun){
   
-  sync_files_2_remote("'autoCV/cv types/'", "'Dar4Proton:Hot Bench Curriculum/'", dryrun)
+  sync_files_2_remote("'cv types/'", "'Dar4Proton:Hot Bench Curriculum/'", dryrun)
   
 }
 
