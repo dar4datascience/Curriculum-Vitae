@@ -36,6 +36,18 @@ fetch_cv_entries <- function(cv_data){
   
   education_entries <- cv_data_2_use |>
     filter(cv_category == "education")
+  
+  #combine dfs but assign a column of work or education depending on the df
+  unified_df <- bind_rows(
+    work_entries |> mutate(entry_type = "work"),
+    education_entries |> mutate(entry_type = "education")
+  )
+  
+  return(unified_df)
+  
+  # we need to wrap all the bullet points into a single column
+  
+  
 }
 
 fetch_skills <- function(cv_data){

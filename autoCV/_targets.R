@@ -11,7 +11,8 @@ library(targets)
 tar_option_set(
   packages = c("dplyr",
                "readODS",
-               "purrr") # Packages that your targets need for their tasks.
+               "purrr"), # Packages that your targets need for their tasks.
+  cue = tar_cue(mode = 'always')
   # format = "qs", # Optionally set the default storage format. qs is fast.
   #
   # Pipelines that take a long time to run may benefit from
@@ -67,13 +68,15 @@ list(
     command = build_cv_components(cv_type)
   ),
   tar_target( # fetch entries
-    name = cv_entries,
+    name = cv_entries, # this only fetched education entries
     command = fetch_cv_entries(cv_components)
   ),
   tar_target( # fetch skills entries
     name = skills_entries,
     command = fetch_skills(cv_components)
   )
+  # parse work n education from: cv category,	title of entry,	location,	primary institution,	Start date of entry (year),	End year of entry Set to "current" if entry is still ongoing,	Each description column is a separate bullet point for the entry. If you need more description bullet points simply add a new column with title "description_{4,5,..}"	,		include?
+
   # render cv
   # synch proton drive
 )
