@@ -67,7 +67,7 @@ list(
     name = cv_components,
     command = build_cv_components(cv_type)
   ),
-  tar_target( # fetch entries
+  tar_target( # fetch entries (industry positions and education)
     name = cv_entries, # this only fetched education entries
     command = fetch_cv_entries(cv_components)
   ),
