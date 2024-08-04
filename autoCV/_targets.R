@@ -10,7 +10,10 @@ library(targets)
 # Set target options:
 tar_option_set(
   packages = c("dplyr",
+               "tidyr",
                "readODS",
+               "glue",
+               "quarto",
                "purrr"), # Packages that your targets need for their tasks.
   cue = tar_cue(mode = 'always')
   # format = "qs", # Optionally set the default storage format. qs is fast.
@@ -60,7 +63,8 @@ tar_source()
 # 5. Certifications
 # 6. COntact INformation
 
-cv_type <- "cv types/dar_cv_engineer.ods"
+cv_type <- "cv types/dar_cv_engineer_short.ods"
+contact_info <- "demo"
 
 list(
   tar_target( 
@@ -71,9 +75,45 @@ list(
     name = cv_entries, # this only fetched education entries
     command = fetch_cv_entries(cv_components)
   ),
+  tar_target(
+    name = cv_events_entries_processed,
+    command = process_entries_to_match_cv_events(cv_entries)
+  ),
   tar_target( # fetch skills entries
     name = skills_entries,
     command = fetch_skills(cv_components)
+  ),
+  tar_target(
+    name = general_title,
+    command = fetch_general_title(cv_components)
+  ),
+  tar_target(
+    name = introduction_summary_text,
+    command = fetch_summary_intro(cv_components)
+  ),
+  tar_target(
+    name = work_entries,
+    command = fetch_work_entries(cv_events_entries_processed)
+  ),
+  tar_target(
+    name = education_entries,
+    command = fetch_education_entries(cv_events_entries_processed)
+  ),
+  tar_target(
+    name = formatted_work_entries,
+    command = format_cv_entries(work_entries)
+  ),
+  tar_target(
+    name = formatted_education_entries,
+    command = format_cv_entries(education_entries)
+  ),
+  tar_target(
+    name = render_quarto_pdf_cv,
+    command = render_quarto_cv(general_title,
+                               introduction_summary_text,
+                               formatted_work_entries,
+                               formatted_education_entries,
+                               contact_info)
   )
   # parse work n education from: cv category,	title of entry,	location,	primary institution,	Start date of entry (year),	End year of entry Set to "current" if entry is still ongoing,	Each description column is a separate bullet point for the entry. If you need more description bullet points simply add a new column with title "description_{4,5,..}"	,		include?
 

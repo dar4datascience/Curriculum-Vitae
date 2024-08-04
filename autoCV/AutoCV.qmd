@@ -1,5 +1,6 @@
 ---
 author: Daniel Amieva Rodriguez
+title: "`r params$general_title`"
 format:
   classic-cv-pdf: default
 cvfooter:
@@ -17,54 +18,29 @@ cvmeta:
 execute:
   echo: false
 params:
-  work_entries: data.frame()
-  education_entries: data.frame()
-  skills: "R, bash, Python, javascript, Lua"
+  formatted_work_entries: ""
+  formatted_education_entries: ""
+  general_title: "demo general title"
+  skills: "R, bash, Python, javascript, Lua" #pending to be fetched
   introduction: !expr paste("WOw","UwU", "WHo am I?")
-  contact_info: "mi@mail.com"
+  contact_info: "mi@mail.com" #pending
 ---
-
-```{r}
-#| label: cvevents
-cvevents <- function(tbl, when, what, where, details) {
-
-    command_start <- "\\cvevent"
-
-    res <- paste0(
-        command_start, "{", tbl[[when]], "}", 
-        "{", tbl[[what]], "}",
-        "{", tbl[[where]], "}")
-    
-    tbl[[details]] <- sapply(tbl[[details]], function(x) paste0("{", x, "}", collapse = ","))
-    res <- paste0(res, "{",tbl[[details]],"}")
-
-    cat(res, sep = "\n")
-}
-```
 
 # Summary 
 
 `r params$introduction`
 
-# Experience
+# Relevant Experience
 
 
 ```{r}
 #| label: experience
 #| output: asis
-tibble::tribble(
-    ~role, ~institution, ~dates, ~details, ~tasks,
-    "Team Lead", "GESIS - Leibniz Institute for the Social Sciences", "Mar. 2022 - Present",
-    "Transparent Social Analytics, Department of Computational Social Science", c("Coordination of a project to build an Open Science platform with reusable code and tutorials", "Research on Open Science Practices", "Implementation of tools to enhance reproducibility and facilitate research with digital data in R"),
-    "Presidential Fellow", "University of Manchester", "Sep. 2018 - Feb. 2022",
-    "Sociology Department", c("Research on Disinformation on Social Media", "Analyses of large scale and unstructured data sets with R, Python and Bash"),
-    "Post Doctoral Researcher", "ETH Zurich", "Nov. 2017 - Aug. 2018", "Chair of Social Networks", c("Developing new methods to analyze social networks", "Implementing methods in libraries", "Gathering and analyzing large datsets from Social Media APIs"),
-    "Post Doctoral Researcher", "University of Konstanz", "Oct. 2015 - Oct. 2017", "Department of Computer & Information Science", c("Developing new methods to analyze social networks", "Implementing methods in libraries", "Webscraping and harmonizing a large corpus of football data"),
-    "Ph.D. Candidate", "University of Konstanz", "Nov. 2012 - Sep. 2015", "Department of Computer & Information Science", c("Developing new methods to analyze social networks", "Implementing methods in libraries")
-) 
+# params$work_entries |>
+#     cvevents("when", "what", "where", "tasks")
 
-|>
-    cvevents(when = "dates", what = "role", where = "institution", details = "tasks")
+params$formatted_work_entries |>
+    cat(sep = "\n")
 ```
 
 # Education
@@ -72,10 +48,8 @@ tibble::tribble(
 ```{r }
 #| label: education
 #| output: asis
-tibble::tribble(
-    ~degree, ~uni, ~loc, ~dates, ~details,
-    "Ph.D. in Computer Science", "University of Konstanz", "Konstanz, Germany", "Nov. 2012 - Sep. 2015", c("Thesis: A Positional Approach for Network Centrality", "Developed and implemented new methods to assess network centrality"),
-    "Diploma in Business Mathematics", "KIT", "Karlsruhe, Germany", "Sep. 2006 - Jul. 2012", c("Thesis: Modularity Maximization", "Implementation and comparison of different clustering algorithms using Matlab")
-) |>
-    cvevents(when = "dates", what = "degree", where = "loc", details = "details")
+
+params$education_entries |>
+  cat(sep = "\n")
+
 ```
