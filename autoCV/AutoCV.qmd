@@ -1,0 +1,55 @@
+---
+author: Daniel Amieva Rodriguez
+title: "`r params$general_title`"
+format:
+  classic-cv-pdf: default
+cvfooter:
+  left: "what? date of render"
+  right: "github.com/dar4datascience"
+cvcolor: 4b0082 # electric indigo 6f00ff # han purple 5218fa
+cvfont: comfortaa #texlive fonts like raleway,fetamont,gillius,comfortaa
+cvmeta:
+  - title: Current Role
+    left: "Senior Business Developer Engineer @ Rackspace"
+    right: "`r params$contact_info`" 
+  - title: Techs
+    left: "`r params$skills`" 
+    right: Mexico City, Mexico
+execute:
+  echo: false
+params:
+  formatted_work_entries: ""
+  formatted_education_entries: ""
+  general_title: "demo general title"
+  skills: "`r params$skillz`"
+  introduction: !expr paste("WOw","UwU", "WHo am I?")
+  contact_info: "mi@mail.com" #pending
+---
+
+# Summary 
+
+`r params$introduction`
+
+# Relevant Experience
+
+
+```{r}
+#| label: experience
+#| output: asis
+# params$work_entries |>
+#     cvevents("when", "what", "where", "tasks")
+
+params$formatted_work_entries |>
+    cat(sep = "\n")
+```
+
+# Education
+
+```{r }
+#| label: education
+#| output: asis
+
+params$formatted_education_entries |>
+  cat(sep = "\n")
+
+```
