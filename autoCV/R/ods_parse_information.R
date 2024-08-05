@@ -57,7 +57,10 @@ fetch_cv_entries <- function(cv_data){
 fetch_skills <- function(cv_data){
   
    cv_data |> 
-    pluck("skills") 
+    pluck("skills") |> 
+    pull(skill) |> 
+    paste(collapse = ", ")
+    
   
 }
 
@@ -67,6 +70,11 @@ process_entries_to_match_cv_events <- function(unified_entries_df){
     mutate(
       when = paste0(start, " - ", end),
       order = row_number()
+    ) |> 
+    mutate(
+      across(description_1:description_3,
+             ~coalesce(., "EMPTY")
+      )
     ) |> 
     rowwise() |> 
     mutate(

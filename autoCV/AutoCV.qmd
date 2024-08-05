@@ -10,18 +10,18 @@ cvcolor: 4b0082 # electric indigo 6f00ff # han purple 5218fa
 cvfont: comfortaa #texlive fonts like raleway,fetamont,gillius,comfortaa
 cvmeta:
   - title: Current Role
-    left: Senior Data Developer @ Rackspace
-    right: Mexico City, Mexico
+    left: "Senior Business Developer Engineer @ Rackspace"
+    right: "`r params$contact_info`" 
   - title: Techs
     left: "`r params$skills`" 
-    right: "`r params$contact_info`" 
+    right: Mexico City, Mexico
 execute:
   echo: false
 params:
   formatted_work_entries: ""
   formatted_education_entries: ""
   general_title: "demo general title"
-  skills: "R, bash, Python, javascript, Lua" #pending to be fetched
+  skills: "`r params$skillz`"
   introduction: !expr paste("WOw","UwU", "WHo am I?")
   contact_info: "mi@mail.com" #pending
 ---
@@ -49,7 +49,7 @@ params$formatted_work_entries |>
 #| label: education
 #| output: asis
 
-params$education_entries |>
+params$formatted_education_entries |>
   cat(sep = "\n")
 
 ```

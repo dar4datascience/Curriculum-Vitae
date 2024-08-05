@@ -1,5 +1,5 @@
 
-render_quarto_cv <- function(general_title, introduction_summary_text, formatted_work_entries, formatted_education_entries, contact_info){
+render_quarto_cv <- function(general_title, introduction_summary_text, formatted_work_entries, formatted_education_entries, skillz, contact_info){
   
   # Render the CV
   quarto_render(
@@ -10,6 +10,7 @@ render_quarto_cv <- function(general_title, introduction_summary_text, formatted
       introduction = introduction_summary_text,
       formatted_work_entries = formatted_work_entries,
       formatted_education_entries = formatted_education_entries,
+      skills = skillz,
       contact_info = contact_info
     )
   )
@@ -36,7 +37,10 @@ format_cv_entries <- function(cv_entries){
     coalesced_tasks <- cv_entries |> 
       #unlist() |> 
       dplyr::pull(tasks) |> 
-      purrr::map_chr(~paste0("{", .x, "}", collapse = ","))
+      #DROP LIST ELEMNT IF CONTENT EQUALS "EMPTY"
+      purrr::map(~ .x[!grepl("EMPTY", .x, ignore.case = FALSE)]) |> 
+      purrr::map_chr(~(paste0("{", .x, "}", collapse = ",")))
+        
     
     # build details into 1
     

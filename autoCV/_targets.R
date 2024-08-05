@@ -64,12 +64,13 @@ tar_source()
 # 6. COntact INformation
 
 cv_type <- "cv types/dar_cv_engineer_short.ods"
-contact_info <- "demo"
+contact_info <- "job_opportunities_only_danielamieva@protonmail.com"
 
 list(
   tar_target( 
     name = cv_components,
-    command = build_cv_components(cv_type)
+    command = build_cv_components(cv_type),
+    cue = tar_cue(mode = 'always')
   ),
   tar_target( # fetch entries (industry positions and education)
     name = cv_entries, # this only fetched education entries
@@ -113,6 +114,7 @@ list(
                                introduction_summary_text,
                                formatted_work_entries,
                                formatted_education_entries,
+                               skills_entries,
                                contact_info)
   )
   # parse work n education from: cv category,	title of entry,	location,	primary institution,	Start date of entry (year),	End year of entry Set to "current" if entry is still ongoing,	Each description column is a separate bullet point for the entry. If you need more description bullet points simply add a new column with title "description_{4,5,..}"	,		include?
