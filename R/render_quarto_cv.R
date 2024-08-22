@@ -3,7 +3,7 @@ render_quarto_cv <- function(general_title, introduction_summary_text, formatted
   
   # Render the CV
   quarto_render(
-    input = "~/Documents/Curriculum-Vitae/autoCV/AutoCV.qmd",
+    input = "~/Documents/Curriculum-Vitae/AutoCV.qmd",
     output_file = "danielamievarodriguez_cv.pdf",
     execute_params = list(
       general_title = general_title,
