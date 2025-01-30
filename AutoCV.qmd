@@ -4,10 +4,10 @@ title: "`r params$general_title`"
 format:
   classic-cv-pdf: default
 cvfooter:
-  left: "what? date of render"
+  left: "`r Sys.Date()`"
   right: "github.com/dar4datascience"
 cvcolor: 4b0082 # electric indigo 6f00ff # han purple 5218fa
-cvfont: comfortaa #texlive fonts like raleway,fetamont,gillius,comfortaa
+cvfont: comfortaa #texlive fonts like raleway,fetamont,comfortaa, gillius
 cvmeta:
   - title: Current Role
     left: "Senior Business Developer Engineer @ Rackspace"
