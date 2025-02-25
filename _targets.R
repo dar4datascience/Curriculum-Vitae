@@ -64,7 +64,7 @@ tar_source()
 # 6. COntact INformation
 
 cv_type <- "cv types/dar_cv_engineer_short.ods"
-contact_info <- "job_opportunities_only_danielamieva@protonmail.com"
+contact_info <- "danielamieva@dar4datascience.com"
 
 list(
   tar_target( 
