@@ -63,7 +63,7 @@ tar_source()
 # 5. Certifications
 # 6. COntact INformation
 
-cv_type <- "cv types/dar_cv_ai_engineer_short.ods"
+cv_type <- "cv types/dar_cv_engineer_short.ods"
 contact_info <- "danielamieva@dar4datascience.com"
 
 list(
