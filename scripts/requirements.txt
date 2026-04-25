@@ -1,0 +1,4 @@
+requests>=2.31.0
+pandas>=2.0.0
+ezodf>=0.3.2
+lxml>=4.9.0
