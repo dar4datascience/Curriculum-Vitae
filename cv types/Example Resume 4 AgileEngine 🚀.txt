@@ -1,0 +1,53 @@
+﻿Daniel Amieva Rodriguez	
+Business Developer Engineer
+
+SUMMARY
+Experienced Lead Data Engineer with over 5 years in Big Data and Business Intelligence, adept at orchestrating comprehensive data architectures. Proficient in designing and optimizing ETL processes, I bring strong expertise in SQL, Python, Airflow, Docker, GCP, AWS, and writing technical documentation. With a proven track record of technical excellence, I am well-suited to contribute effectively to data integration, data enrichment, and data quality initiatives.
+SKILLS
+Languages and Frameworks: Python, SQL, R, Git, Databricks, Airflow, dbt, Docker, Quarto, Terraform, Snowflake
+
+OS & Platforms: MacOS, Linux, Windows; AWS; Azure; GCP
+
+SCM, Build, CI/CD: Gitlab/Github, Git, Jira, Confluence;
+
+Other: OOP, REST, Data Pipeline Design Patterns, UI/UX Design, Data Architecting, Agile, Data Governance, Machine Learning, Data Warehousing
+
+EDUCATION 
+    • Universidad Nacional Autonoma de Mexico	2019 - 2020
+Diploma, Data Science
+    • Universidad Nacional Autonoma de Mexico	2015 - 2021
+Bachelors, Economics
+CERTIFICATIONS
+    • Engineer Data in Google Cloud: Google	2023
+    • Applying Machine Learning and AI Services on AWS: Cloud Academy	2023
+    • The Infrastructure Developer's Guide to Terraform: AWS Edition: Cloud Academy	2024
+    • Serverless Python Web Development For AWS: Cloud Academy	2024
+
+
+RELEVANT EMPLOYMENT HISTORY
+BAZ, Business Developer Engineer	2023 - Present
+Data Orchestration Of Marketing Data - Championed the optimization of marketing data through orchestrated data architectures using Databricks, ensuring comprehensive design and implementation. Led a cross-functional team to develop and maintain multi-platform distributed applications, aligning data architecture strategies with organizational goals and employing technologies like Python, SQL, R, Docker, BigQuery, Cloud Composer, and Looker in an Agile environment.
+Data Migration Work Path - Executed a strategic Data Migration Work Path, orchestrating the seamless transition of data across platforms. Utilized a technology stack comprising Python, SQL, R, AWS S3, Cloud Storage, and Agile methodologies to design and implement a robust framework, ensuring efficient data migration and alignment with organizational objectives.
+Data Engineering in GCP - Led the implementation of comprehensive data engineering solutions within Google Cloud Platform (GCP), focusing on optimizing data workflows and architecture. Collaborated with a cross-functional team to design and maintain efficient, distributed applications, aligning data architecture strategies with organizational goals. Technologies employed include Python, SQL, R, Docker, BigQuery, Cloud Composer, Cloud Storage, and an Agile methodology, ensuring robust data engineering practices in GCP.
+Activities and responsibilities:
+    • Orchestrated and managed the design and implementation of comprehensive data architectures using Databricks.
+    • Led a cross-functional team in the development and maintenance of multi-platform, distributed applications.
+    • Collaborated with enterprise architects to align data architecture strategies with organizational goals.
+
+Technologies:  Python, SQL, R, Docker, Big Query, Cloud Composer, Databricks, Agile, AWS S3, Cloud Storage, Looker
+DIDI CHUXING, Data Integration Engineer	 2021 - 2023
+Data Orchestration of CX Data - Spearheaded CX data management through meticulous data orchestration, implementing robust governance policies and ensuring data quality using a technology stack including Python, SQL, R, Tableau, AWS, Airflow, and more.
+Data Migration between Clouds - Executed a seamless transition of data between cloud environments, minimizing downtime and maximizing efficiency, leveraging technologies like Python, SQL, AWS, Airflow, and adhering to Agile methodologies for a secure and swift migration.
+Activities and responsibilities:
+    • Implemented data governance policies, ensuring data quality and integrity in CX analytics processes.
+    • Engineered and maintained data integration solutions for SSL business intelligence.
+Technologies:	Python, SQL, R, Tableau, AWS, AWS Athena, AWS Glue, AWS S3, Airflow, dbt, Shiny, Gitlab, Linux, Spark, Hive, Agile.
+
+DGTIC UNAM, Data Engineer	 2019 - 2021
+Big Data MOOC Analytics - Implemented robust database architectures in collaboration with the IT department and pioneered Spark adoption, establishing the organization's first data warehouse for online lectures during the pandemic. Proficiently queried MOOC data from Postgres using technologies such as Python, SQL, R, Spark, Linux, Docker, and Agile methodologies.
+Activities and responsibilities:
+    • Collaborated with the IT department to design and implement robust database architectures.
+    • Pioneered Spark adoption, crafting the organization's first data warehouse for online lectures.
+    • Query MOOC data from Postgres database.
+Technologies:	Python, SQL, R, Spark, Linux, Postgres, Docker, Agile.
+
