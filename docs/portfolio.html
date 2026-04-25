@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>readme – Daniel Amieva Rodriguez</title>
+<title>Data Engineering Portfolio – Daniel Amieva Rodriguez</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-44f85c6f08a42a349caffab99051d191.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-cdbbca776f692021a7e3b67e0063377e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,9 +75,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="portfolio-styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -97,17 +98,28 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">📄 CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./danielamievarodriguez_cv.pdf"> 
-<span class="menu-text">Download CV</span></a>
+    <a class="nav-link active" href="./portfolio.html" aria-current="page"> 
+<span class="menu-text">📊 Portfolio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./animations.html"> 
+<span class="menu-text">✨ Animations</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./danielamievarodriguez_cv.pdf"> <i class="bi bi-download" role="img">
+</i> 
+<span class="menu-text">Download PDF</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/dar4datascience"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/dar4datascience"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -119,62 +131,378 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Data Engineering Portfolio</h1>
+<p class="subtitle lead">Building Scalable Data Infrastructure &amp; AI-Powered Solutions</p>
+</div>
 
 
 
+<div class="quarto-title-meta column-page">
 
-<section id="auto-cv" class="level1">
-<h1>Auto CV</h1>
-<section id="pending" class="level2">
-<h2 class="anchored" data-anchor-id="pending">Pending</h2>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+.hero-portfolio {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 3rem 2rem;
+  margin: -2rem -2rem 2rem -2rem;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.hero-portfolio h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.project-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-left: 5px solid #667eea;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.project-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.tech-tag {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.metric {
+  text-align: center;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #667eea;
+  display: block;
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  color: #666;
+}
+</style>
+
+<div class="hero-portfolio">
+  <h1>🚀 Data Engineering Projects</h1>
+  <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem;">
+    Real-world implementations of scalable data infrastructure, AI integration, and cloud-native solutions
+  </p>
+</div>
+<section id="featured-projects" class="level2">
+<h2 class="anchored" data-anchor-id="featured-projects">Featured Projects</h2>
+<section id="enterprise-data-lake---teamstation-ai" class="level3">
+<h3 class="anchored" data-anchor-id="enterprise-data-lake---teamstation-ai">🏗️ Enterprise Data Lake - TeamStation AI</h3>
+<div class="project-card">
+<h3 class="project-title anchored">
+Medallion Architecture Data Lake
+</h3>
+<div class="project-meta">
+<pre><code>&lt;span class="tech-tag"&gt;AWS Glue&lt;/span&gt;
+&lt;span class="tech-tag"&gt;Step Functions&lt;/span&gt;
+&lt;span class="tech-tag"&gt;Lambda&lt;/span&gt;
+&lt;span class="tech-tag"&gt;DMS&lt;/span&gt;
+&lt;span class="tech-tag"&gt;Python&lt;/span&gt;</code></pre>
+</div>
+<p>
+<strong>Challenge:</strong> Build enterprise data lake from ground up for international clients with real-time streaming and batch processing capabilities.
+</p>
+<p>
+<strong>Solution:</strong>
+</p>
 <ul>
-<li>updating gihtug pages</li>
-<li>github action deployment</li>
+<li>Implemented medallion architecture (Bronze/Silver/Gold layers)</li>
+<li>Custom Python packages for data transformation</li>
+<li>Step Functions orchestration for complex workflows</li>
+<li>DMS streaming for real-time data ingestion</li>
+<li>S3-based data lake with partitioning strategy</li>
 </ul>
+<div class="metrics-grid">
+<pre><code>&lt;div class="metric"&gt;
+  &lt;span class="metric-value"&gt;3&lt;/span&gt;
+  &lt;span class="metric-label"&gt;Data Layers&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="metric"&gt;
+  &lt;span class="metric-value"&gt;50+&lt;/span&gt;
+  &lt;span class="metric-label"&gt;Data Sources&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="metric"&gt;
+  &lt;span class="metric-value"&gt;TB&lt;/span&gt;
+  &lt;span class="metric-label"&gt;Data Processed&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="metric"&gt;
+  &lt;span class="metric-value"&gt;99.9%&lt;/span&gt;
+  &lt;span class="metric-label"&gt;Uptime&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<p>
+<strong>Impact:</strong> Enabled real-time analytics for business intelligence, reduced data processing time by 70%, and established foundation for AI/ML initiatives.
+</p>
+</div>
 </section>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Repository for automating CV generation on-demand.</p>
-<p>BROKEN HERE…. You can see the lastest version of my CV @<a href="https://dar4datascience.github.io/Curriculum-Vitae/">this github pages link</a></p>
-</section>
-<section id="objective" class="level2">
-<h2 class="anchored" data-anchor-id="objective">Objective</h2>
-<p>Simplify the CV generation process by linking a live Google Sheets with the complete information into a process that curates the data and publishes that information into handy formats.</p>
-</section>
-<section id="workflow" class="level2">
-<h2 class="anchored" data-anchor-id="workflow">Workflow</h2>
-<pre class="mermaid"><code>  graph LR;
-      explanation&gt;Using R to Automate your CV]
-      A[Detailed Life Experiences]--&gt;B[Google Sheets];
-      B--&gt;C[GoogleSheets4 R];
-      C--&gt;D[Render CV using Vitae package];
-      D--&gt;E[Customize CV with datadrivencv]
-      E--&gt;F[Automate and deploy a website with downloadable PDF];</code></pre>
-</section>
-<section id="assets" class="level2">
-<h2 class="anchored" data-anchor-id="assets">Assets</h2>
+<section id="ai-powered-bi-integration" class="level3">
+<h3 class="anchored" data-anchor-id="ai-powered-bi-integration">🤖 AI-Powered BI Integration</h3>
+<div class="project-card">
+<h3 class="project-title anchored">
+Natural Language BI Querying
+</h3>
+<div class="project-meta">
+<pre><code>&lt;span class="tech-tag"&gt;LLM Integration&lt;/span&gt;
+&lt;span class="tech-tag"&gt;BI Tools&lt;/span&gt;
+&lt;span class="tech-tag"&gt;Snowflake Schema&lt;/span&gt;
+&lt;span class="tech-tag"&gt;Python&lt;/span&gt;
+&lt;span class="tech-tag"&gt;AWS&lt;/span&gt;</code></pre>
+</div>
+<p>
+<strong>Challenge:</strong> Enable non-technical users to query complex data warehouse using natural language.
+</p>
+<p>
+<strong>Solution:</strong>
+</p>
 <ul>
-<li>CV in pdf</li>
-<li>CV as an html</li>
-<li>R Scripts</li>
-<li>css file</li>
-<li>README</li>
+<li>Integrated third-party BI tool with AI capabilities</li>
+<li>Implemented authentication flow to frontend application</li>
+<li>Built Snowflake schema with ad-hoc query flexibility</li>
+<li>Automated visualization generation based on query intent</li>
+<li>Created automation procedures for common BI operations</li>
 </ul>
+<div class="metrics-grid">
+<pre><code>&lt;div class="metric"&gt;
+  &lt;span class="metric-value"&gt;10x&lt;/span&gt;
+  &lt;span class="metric-label"&gt;Faster Insights&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="metric"&gt;
+  &lt;span class="metric-value"&gt;80%&lt;/span&gt;
+  &lt;span class="metric-label"&gt;Less SQL Needed&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="metric"&gt;
+  &lt;span class="metric-value"&gt;100+&lt;/span&gt;
+  &lt;span class="metric-label"&gt;Automated Reports&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<p>
+<strong>Impact:</strong> Democratized data access across organization, reduced time-to-insight from days to minutes, enabled self-service analytics.
+</p>
+</div>
 </section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
+<section id="cicd-pipeline-automation" class="level3">
+<h3 class="anchored" data-anchor-id="cicd-pipeline-automation">🔄 CI/CD Pipeline Automation</h3>
+<div class="project-card">
+<h3 class="project-title anchored">
+Infrastructure as Code &amp; Deployment Automation
+</h3>
+<div class="project-meta">
+<pre><code>&lt;span class="tech-tag"&gt;GitHub Actions&lt;/span&gt;
+&lt;span class="tech-tag"&gt;Terraform&lt;/span&gt;
+&lt;span class="tech-tag"&gt;Docker&lt;/span&gt;
+&lt;span class="tech-tag"&gt;AWS&lt;/span&gt;</code></pre>
+</div>
+<p>
+<strong>Challenge:</strong> Automate deployment of data infrastructure and ETL pipelines with zero downtime.
+</p>
+<p>
+<strong>Solution:</strong>
+</p>
 <ul>
-<li><a href="https://github.com/schochastics/classic-cv">CV Quarto Template</a></li>
+<li>GitHub Actions workflows for automated testing and deployment</li>
+<li>Terraform modules for infrastructure provisioning</li>
+<li>Docker containerization for consistent environments</li>
+<li>Automated rollback mechanisms</li>
+<li>Infrastructure testing and validation</li>
 </ul>
+<div class="metrics-grid">
+<pre><code>&lt;div class="metric"&gt;
+  &lt;span class="metric-value"&gt;95%&lt;/span&gt;
+  &lt;span class="metric-label"&gt;Deployment Success&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="metric"&gt;
+  &lt;span class="metric-value"&gt;5 min&lt;/span&gt;
+  &lt;span class="metric-label"&gt;Deploy Time&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="metric"&gt;
+  &lt;span class="metric-value"&gt;0&lt;/span&gt;
+  &lt;span class="metric-label"&gt;Downtime&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<p>
+<strong>Impact:</strong> Reduced deployment time from hours to minutes, eliminated manual errors, enabled rapid iteration and feature delivery.
+</p>
+</div>
+</section>
+<section id="ai-enhanced-documentation-system" class="level3">
+<h3 class="anchored" data-anchor-id="ai-enhanced-documentation-system">📚 AI-Enhanced Documentation System</h3>
+<div class="project-card">
+<h3 class="project-title anchored">
+Unified Documentation with Quarto
+</h3>
+<div class="project-meta">
+<pre><code>&lt;span class="tech-tag"&gt;Quarto&lt;/span&gt;
+&lt;span class="tech-tag"&gt;GitHub&lt;/span&gt;
+&lt;span class="tech-tag"&gt;AI&lt;/span&gt;
+&lt;span class="tech-tag"&gt;Markdown&lt;/span&gt;</code></pre>
+</div>
+<p>
+<strong>Challenge:</strong> Create unified documentation system for complex data infrastructure that stays up-to-date.
+</p>
+<p>
+<strong>Solution:</strong>
+</p>
+<ul>
+<li>Quarto-based documentation leveraging GitHub repositories</li>
+<li>AI enhancement for automatic documentation updates</li>
+<li>Covers Step Functions, Lambdas, custom packages</li>
+<li>Searchable knowledge base</li>
+<li>Automated deployment with GitHub Actions</li>
+</ul>
+<div class="metrics-grid">
+<pre><code>&lt;div class="metric"&gt;
+  &lt;span class="metric-value"&gt;90%&lt;/span&gt;
+  &lt;span class="metric-label"&gt;Faster Onboarding&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="metric"&gt;
+  &lt;span class="metric-value"&gt;500+&lt;/span&gt;
+  &lt;span class="metric-label"&gt;Doc Pages&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="metric"&gt;
+  &lt;span class="metric-value"&gt;Auto&lt;/span&gt;
+  &lt;span class="metric-label"&gt;Updates&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+<p>
+<strong>Impact:</strong> Reduced new team member onboarding from weeks to days, improved knowledge sharing, decreased support tickets.
+</p>
+</div>
+</section>
+</section>
+<section id="technical-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="technical-architecture">Technical Architecture</h2>
+<div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+  <h3 style="color: #667eea; margin-top: 0;" class="anchored">Core Technology Stack</h3>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+    <div>
+      <h4 style="color: #2d3748; font-size: 1.1rem;" class="anchored">☁️ Cloud Platform</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li>• AWS (Primary)</li>
+        <li>• Multi-region deployment</li>
+        <li>• Serverless architecture</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 style="color: #2d3748; font-size: 1.1rem;" class="anchored">🔧 Data Processing</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li>• AWS Glue</li>
+        <li>• Step Functions</li>
+        <li>• Lambda</li>
+        <li>• DMS</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 style="color: #2d3748; font-size: 1.1rem;" class="anchored">💾 Storage &amp; DB</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li>• S3 Data Lake</li>
+        <li>• PostgreSQL</li>
+        <li>• Snowflake Schema</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 style="color: #2d3748; font-size: 1.1rem;" class="anchored">🚀 DevOps</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li>• GitHub Actions</li>
+        <li>• Terraform</li>
+        <li>• Docker</li>
+        <li>• Infrastructure as Code</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+<section id="github-activity" class="level2">
+<h2 class="anchored" data-anchor-id="github-activity">GitHub Activity</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
+  <div>
+    <img src="https://github-readme-stats.vercel.app/api?username=dar4datascience&amp;show_icons=true&amp;theme=radical&amp;hide_border=true&amp;bg_color=667eea&amp;title_color=ffffff&amp;text_color=ffffff&amp;icon_color=ffffff" alt="GitHub Stats" style="width: 100%; border-radius: 10px;">
+  </div>
+  <div>
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dar4datascience&amp;layout=compact&amp;theme=radical&amp;hide_border=true&amp;bg_color=764ba2&amp;title_color=ffffff&amp;text_color=ffffff" alt="Top Languages" style="width: 100%; border-radius: 10px;">
+  </div>
+</div>
+<hr>
+<div style="text-align: center; padding: 2rem; color: #666;">
+<p>
+<strong>Want to discuss a project?</strong>
+</p>
+<p>
+<a href="mailto:danielamieva@dar4datascience.com" style="color: #667eea; text-decoration: none; font-weight: 600;">📧 danielamieva@dar4datascience.com</a>
+</p>
+</div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -583,5 +911,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/dar4datascience/Curriculum-Vitae/edit/main/Readme.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dar4datascience/Curriculum-Vitae/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/dar4datascience/Curriculum-Vitae/edit/main/portfolio.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dar4datascience/Curriculum-Vitae/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

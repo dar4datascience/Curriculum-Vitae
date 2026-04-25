@@ -1,16 +1,12 @@
 ---
-title: "Daniel Amieva Rodriguez"
-subtitle: "Senior Data Engineer | AWS Specialist | AI Integration Expert"
+title: "Curriculum Vitae"
+subtitle: "Senior Data Engineer | AWS Cloud Architect | AI Integration Specialist"
 format:
   html:
-    theme: 
-      - cosmo
-      - custom.scss
+    theme: cosmo
     css: styles.css
     toc: false
     page-layout: full
-    grid:
-      body-width: 1200px
 ---
 
 ```{=html}

@@ -1,0 +1,336 @@
+---
+title: "Data Engineering Portfolio"
+subtitle: "Building Scalable Data Infrastructure & AI-Powered Solutions"
+format:
+  html:
+    theme: cosmo
+    css: portfolio-styles.css
+    toc: false
+    page-layout: full
+---
+
+```{=html}
+<style>
+.hero-portfolio {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 3rem 2rem;
+  margin: -2rem -2rem 2rem -2rem;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.hero-portfolio h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.project-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-left: 5px solid #667eea;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.project-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.tech-tag {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.metric {
+  text-align: center;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #667eea;
+  display: block;
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  color: #666;
+}
+</style>
+
+<div class="hero-portfolio">
+  <h1>🚀 Data Engineering Projects</h1>
+  <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem;">
+    Real-world implementations of scalable data infrastructure, AI integration, and cloud-native solutions
+  </p>
+</div>
+```
+
+## Featured Projects
+
+### 🏗️ Enterprise Data Lake - TeamStation AI
+
+<div class="project-card">
+  <h3 class="project-title">Medallion Architecture Data Lake</h3>
+  <div class="project-meta">
+    <span class="tech-tag">AWS Glue</span>
+    <span class="tech-tag">Step Functions</span>
+    <span class="tech-tag">Lambda</span>
+    <span class="tech-tag">DMS</span>
+    <span class="tech-tag">Python</span>
+  </div>
+  
+  <p><strong>Challenge:</strong> Build enterprise data lake from ground up for international clients with real-time streaming and batch processing capabilities.</p>
+  
+  <p><strong>Solution:</strong></p>
+  - Implemented medallion architecture (Bronze/Silver/Gold layers)
+  - Custom Python packages for data transformation
+  - Step Functions orchestration for complex workflows
+  - DMS streaming for real-time data ingestion
+  - S3-based data lake with partitioning strategy
+  
+  <div class="metrics-grid">
+    <div class="metric">
+      <span class="metric-value">3</span>
+      <span class="metric-label">Data Layers</span>
+    </div>
+    <div class="metric">
+      <span class="metric-value">50+</span>
+      <span class="metric-label">Data Sources</span>
+    </div>
+    <div class="metric">
+      <span class="metric-value">TB</span>
+      <span class="metric-label">Data Processed</span>
+    </div>
+    <div class="metric">
+      <span class="metric-value">99.9%</span>
+      <span class="metric-label">Uptime</span>
+    </div>
+  </div>
+  
+  <p><strong>Impact:</strong> Enabled real-time analytics for business intelligence, reduced data processing time by 70%, and established foundation for AI/ML initiatives.</p>
+</div>
+
+### 🤖 AI-Powered BI Integration
+
+<div class="project-card">
+  <h3 class="project-title">Natural Language BI Querying</h3>
+  <div class="project-meta">
+    <span class="tech-tag">LLM Integration</span>
+    <span class="tech-tag">BI Tools</span>
+    <span class="tech-tag">Snowflake Schema</span>
+    <span class="tech-tag">Python</span>
+    <span class="tech-tag">AWS</span>
+  </div>
+  
+  <p><strong>Challenge:</strong> Enable non-technical users to query complex data warehouse using natural language.</p>
+  
+  <p><strong>Solution:</strong></p>
+  - Integrated third-party BI tool with AI capabilities
+  - Implemented authentication flow to frontend application
+  - Built Snowflake schema with ad-hoc query flexibility
+  - Automated visualization generation based on query intent
+  - Created automation procedures for common BI operations
+  
+  <div class="metrics-grid">
+    <div class="metric">
+      <span class="metric-value">10x</span>
+      <span class="metric-label">Faster Insights</span>
+    </div>
+    <div class="metric">
+      <span class="metric-value">80%</span>
+      <span class="metric-label">Less SQL Needed</span>
+    </div>
+    <div class="metric">
+      <span class="metric-value">100+</span>
+      <span class="metric-label">Automated Reports</span>
+    </div>
+  </div>
+  
+  <p><strong>Impact:</strong> Democratized data access across organization, reduced time-to-insight from days to minutes, enabled self-service analytics.</p>
+</div>
+
+### 🔄 CI/CD Pipeline Automation
+
+<div class="project-card">
+  <h3 class="project-title">Infrastructure as Code & Deployment Automation</h3>
+  <div class="project-meta">
+    <span class="tech-tag">GitHub Actions</span>
+    <span class="tech-tag">Terraform</span>
+    <span class="tech-tag">Docker</span>
+    <span class="tech-tag">AWS</span>
+  </div>
+  
+  <p><strong>Challenge:</strong> Automate deployment of data infrastructure and ETL pipelines with zero downtime.</p>
+  
+  <p><strong>Solution:</strong></p>
+  - GitHub Actions workflows for automated testing and deployment
+  - Terraform modules for infrastructure provisioning
+  - Docker containerization for consistent environments
+  - Automated rollback mechanisms
+  - Infrastructure testing and validation
+  
+  <div class="metrics-grid">
+    <div class="metric">
+      <span class="metric-value">95%</span>
+      <span class="metric-label">Deployment Success</span>
+    </div>
+    <div class="metric">
+      <span class="metric-value">5 min</span>
+      <span class="metric-label">Deploy Time</span>
+    </div>
+    <div class="metric">
+      <span class="metric-value">0</span>
+      <span class="metric-label">Downtime</span>
+    </div>
+  </div>
+  
+  <p><strong>Impact:</strong> Reduced deployment time from hours to minutes, eliminated manual errors, enabled rapid iteration and feature delivery.</p>
+</div>
+
+### 📚 AI-Enhanced Documentation System
+
+<div class="project-card">
+  <h3 class="project-title">Unified Documentation with Quarto</h3>
+  <div class="project-meta">
+    <span class="tech-tag">Quarto</span>
+    <span class="tech-tag">GitHub</span>
+    <span class="tech-tag">AI</span>
+    <span class="tech-tag">Markdown</span>
+  </div>
+  
+  <p><strong>Challenge:</strong> Create unified documentation system for complex data infrastructure that stays up-to-date.</p>
+  
+  <p><strong>Solution:</strong></p>
+  - Quarto-based documentation leveraging GitHub repositories
+  - AI enhancement for automatic documentation updates
+  - Covers Step Functions, Lambdas, custom packages
+  - Searchable knowledge base
+  - Automated deployment with GitHub Actions
+  
+  <div class="metrics-grid">
+    <div class="metric">
+      <span class="metric-value">90%</span>
+      <span class="metric-label">Faster Onboarding</span>
+    </div>
+    <div class="metric">
+      <span class="metric-value">500+</span>
+      <span class="metric-label">Doc Pages</span>
+    </div>
+    <div class="metric">
+      <span class="metric-value">Auto</span>
+      <span class="metric-label">Updates</span>
+    </div>
+  </div>
+  
+  <p><strong>Impact:</strong> Reduced new team member onboarding from weeks to days, improved knowledge sharing, decreased support tickets.</p>
+</div>
+
+## Technical Architecture
+
+```{=html}
+<div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+  <h3 style="color: #667eea; margin-top: 0;">Core Technology Stack</h3>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+    <div>
+      <h4 style="color: #2d3748; font-size: 1.1rem;">☁️ Cloud Platform</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li>• AWS (Primary)</li>
+        <li>• Multi-region deployment</li>
+        <li>• Serverless architecture</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 style="color: #2d3748; font-size: 1.1rem;">🔧 Data Processing</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li>• AWS Glue</li>
+        <li>• Step Functions</li>
+        <li>• Lambda</li>
+        <li>• DMS</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 style="color: #2d3748; font-size: 1.1rem;">💾 Storage & DB</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li>• S3 Data Lake</li>
+        <li>• PostgreSQL</li>
+        <li>• Snowflake Schema</li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 style="color: #2d3748; font-size: 1.1rem;">🚀 DevOps</h4>
+      <ul style="list-style: none; padding: 0;">
+        <li>• GitHub Actions</li>
+        <li>• Terraform</li>
+        <li>• Docker</li>
+        <li>• Infrastructure as Code</li>
+      </ul>
+    </div>
+  </div>
+</div>
+```
+
+## GitHub Activity
+
+```{=html}
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
+  <div>
+    <img src="https://github-readme-stats.vercel.app/api?username=dar4datascience&show_icons=true&theme=radical&hide_border=true&bg_color=667eea&title_color=ffffff&text_color=ffffff&icon_color=ffffff" alt="GitHub Stats" style="width: 100%; border-radius: 10px;">
+  </div>
+  <div>
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dar4datascience&layout=compact&theme=radical&hide_border=true&bg_color=764ba2&title_color=ffffff&text_color=ffffff" alt="Top Languages" style="width: 100%; border-radius: 10px;">
+  </div>
+</div>
+```
+
+---
+
+<div style="text-align: center; padding: 2rem; color: #666;">
+  <p><strong>Want to discuss a project?</strong></p>
+  <p>
+    <a href="mailto:danielamieva@dar4datascience.com" style="color: #667eea; text-decoration: none; font-weight: 600;">📧 danielamieva@dar4datascience.com</a>
+  </p>
+</div>

@@ -1,0 +1,647 @@
+---
+title: "Complete Portfolio Animations"
+subtitle: "All yesenia.io animations replicated in Quarto"
+format: 
+  html:
+    page-layout: full
+    theme: darkly
+    css: portfolio-styles.css
+---
+
+```{=html}
+<style>
+.section-container {
+  min-height: 100vh;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #4a90e2;
+  font-weight: 700;
+}
+
+.nav-dots {
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.nav-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+  margin: 15px 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-dot:hover, .nav-dot.active {
+  background: #4a90e2;
+  transform: scale(1.3);
+}
+
+.tech-carousel {
+  overflow: hidden;
+  padding: 40px 0;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 15px;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  gap: 30px;
+}
+
+.carousel-item {
+  min-width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.carousel-item:hover {
+  transform: scale(1.1);
+  background: rgba(74, 144, 226, 0.2);
+}
+
+.carousel-item img {
+  max-width: 50px;
+  max-height: 50px;
+  filter: brightness(0.9);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  aspect-ratio: 1;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+  color: white;
+}
+
+.gallery-item:hover .gallery-overlay {
+  transform: translateY(0);
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #4a90e2, #764ba2);
+}
+
+.timeline-item {
+  margin-bottom: 50px;
+  position: relative;
+  opacity: 0;
+  animation: fadeInUp 0.6s forwards;
+}
+
+.timeline-item:nth-child(odd) {
+  padding-right: 50%;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  padding-left: 50%;
+  text-align: left;
+}
+
+.timeline-content {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #4a90e2;
+  position: relative;
+}
+
+.timeline-dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #4a90e2;
+  border-radius: 50%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid #1a1a2e;
+  z-index: 1;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), rgba(118, 75, 162, 0.1));
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid rgba(74, 144, 226, 0.3);
+  transition: all 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+  border-color: #4a90e2;
+  box-shadow: 0 10px 30px rgba(74, 144, 226, 0.3);
+}
+
+.stat-number {
+  font-size: 3em;
+  font-weight: bold;
+  color: #4a90e2;
+  margin: 10px 0;
+}
+
+.stat-label {
+  font-size: 1.1em;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.particle-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+</style>
+```
+
+<!-- Navigation Dots -->
+```{=html}
+<div class="nav-dots">
+  <div class="nav-dot active" onclick="scrollToSection(0)"></div>
+  <div class="nav-dot" onclick="scrollToSection(1)"></div>
+  <div class="nav-dot" onclick="scrollToSection(2)"></div>
+  <div class="nav-dot" onclick="scrollToSection(3)"></div>
+  <div class="nav-dot" onclick="scrollToSection(4)"></div>
+  <div class="nav-dot" onclick="scrollToSection(5)"></div>
+</div>
+```
+
+## Section 1: Interactive Bubble Chart {#bubble-section}
+
+```{ojs}
+//| echo: false
+
+d3 = require("d3@7")
+
+// Bubble data
+bubbleData = [
+  {id: 1, name: "Python", category: "Programming", value: 95, icon: "🐍"},
+  {id: 2, name: "AWS", category: "Cloud", value: 90, icon: "☁️"},
+  {id: 3, name: "CI/CD", category: "DevOps", value: 88, icon: "�"},
+  {id: 4, name: "Docker", category: "DevOps", value: 85, icon: "🐳"},
+  {id: 5, name: "GitHub Actions", category: "DevOps", value: 85, icon: "⚙️"},
+  {id: 6, name: "Data Engineering", category: "Data", value: 92, icon: "📊"},
+  {id: 7, name: "Terraform", category: "IaC", value: 75, icon: "🏗️"},
+  {id: 8, name: "ML/AI", category: "AI", value: 80, icon: "🤖"},
+  {id: 9, name: "PostgreSQL", category: "Database", value: 82, icon: "🐘"},
+  {id: 10, name: "Step Functions", category: "Orchestration", value: 88, icon: "🔀"},
+  {id: 11, name: "Lambda", category: "Serverless", value: 90, icon: "λ"},
+  {id: 12, name: "Kubernetes", category: "DevOps", value: 70, icon: "☸️"}
+]
+
+bubbleWidth = 900
+bubbleHeight = 600
+bubbleCenterX = bubbleWidth * 0.5
+bubbleCenterY = bubbleHeight * 0.5
+
+bubbleNodes = bubbleData.map(d => ({
+  ...d,
+  x: bubbleCenterX + (Math.random() - 0.5) * bubbleWidth * 0.8,
+  y: bubbleCenterY + (Math.random() - 0.5) * bubbleHeight * 0.8,
+  r: 0,
+  radius: Math.sqrt(d.value) * 6,
+  fx: null,
+  fy: null
+}))
+
+bubbleSimulation = d3.forceSimulation(bubbleNodes)
+  .force('charge', d3.forceManyBody().strength(5))
+  .force('collide', d3.forceCollide(d => d.r + 3))
+  .force('x', d3.forceX(bubbleCenterX).strength(0.05))
+  .force('y', d3.forceY(bubbleCenterY).strength(0.05))
+
+bubbleChart = {
+  const svg = d3.create("svg")
+    .attr("width", bubbleWidth)
+    .attr("height", bubbleHeight)
+    .style("background", "linear-gradient(135deg, #667eea 0%, #764ba2 100%)")
+    .style("border-radius", "15px");
+
+  let focusedNode = null;
+
+  const node = svg.selectAll(".node")
+    .data(bubbleNodes)
+    .join("g")
+    .attr("class", "node")
+    .style("cursor", "pointer");
+
+  node.append("circle")
+    .attr("r", 0)
+    .style("fill", "#fff")
+    .style("stroke", "#333")
+    .style("stroke-width", 2)
+    .transition()
+    .duration(2000)
+    .delay((d, i) => i * 100)
+    .ease(d3.easeElasticOut)
+    .attr("r", d => d.radius);
+
+  node.append("text")
+    .attr("text-anchor", "middle")
+    .attr("dy", "0.35em")
+    .style("font-size", d => `${d.radius * 0.6}px`)
+    .style("pointer-events", "none")
+    .text(d => d.icon);
+
+  node.on("click", function(event, d) {
+    event.stopPropagation();
+    if (d === focusedNode) return;
+    
+    if (focusedNode) {
+      d3.transition().duration(1500)
+        .tween("reset", () => {
+          const ir = d3.interpolateNumber(focusedNode.r, focusedNode.radius);
+          return t => { focusedNode.r = ir(t); };
+        });
+    }
+    
+    focusedNode = d;
+    node.style("opacity", n => n === d ? 1 : 0.3);
+    
+    d3.transition().duration(1500)
+      .tween("zoom", () => {
+        const ix = d3.interpolateNumber(d.x, bubbleCenterX);
+        const iy = d3.interpolateNumber(d.y, bubbleCenterY);
+        const ir = d3.interpolateNumber(d.r, 100);
+        return t => {
+          d.x = ix(t);
+          d.y = iy(t);
+          d.r = ir(t);
+        };
+      });
+  });
+
+  svg.on("click", () => {
+    if (focusedNode) {
+      d3.transition().duration(1500)
+        .tween("reset", () => {
+          const ir = d3.interpolateNumber(focusedNode.r, focusedNode.radius);
+          return t => { focusedNode.r = ir(t); };
+        });
+      focusedNode = null;
+      node.style("opacity", 1);
+    }
+  });
+
+  bubbleSimulation.on("tick", () => {
+    node.attr("transform", d => `translate(${d.x},${d.y})`);
+    node.select("circle").attr("r", d => d.r || d.radius);
+  });
+
+  bubbleNodes.forEach((d, i) => {
+    setTimeout(() => { d.r = d.radius; }, i * 100);
+  });
+
+  return svg.node();
+}
+```
+
+---
+
+## Section 2: Tech Stack Carousel {#carousel-section}
+
+```{=html}
+<div class="section-container">
+  <h2 class="section-title">Technologies & Tools - DevOps & Data Engineering Focus</h2>
+  <div class="tech-carousel">
+    <div class="carousel-track">
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Actions"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab CI"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Apache Airflow"></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Actions"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab CI"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Apache Airflow"></div>
+    </div>
+  </div>
+</div>
+```
+
+---
+
+## Section 3: Experience Timeline {#timeline-section}
+
+```{=html}
+<div class="section-container">
+  <h2 class="section-title">Professional Journey</h2>
+  <div class="timeline">
+    <div class="timeline-item" style="animation-delay: 0.1s">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Senior Data Engineer</h3>
+        <h4>TeamStation AI</h4>
+        <p class="timeline-date">May 2025 - Present</p>
+        <p>Built data lake from scratch with medallion architecture (AWS Glue, Step Functions, Lambda). Implemented <strong>CI/CD pipelines with GitHub Actions</strong> for automated deployments. Integrated AI-powered BI tools with natural language querying. <strong>Infrastructure as Code</strong> with automated testing and deployment workflows.</p>
+      </div>
+    </div>
+    
+    <div class="timeline-item" style="animation-delay: 0.2s">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Data Engineer</h3>
+        <h4>Previous Company</h4>
+        <p class="timeline-date">2022 - 2025</p>
+        <p>Developed ETL pipelines with <strong>automated CI/CD workflows</strong>. Implemented <strong>Docker containerization</strong> and orchestration. Built <strong>GitHub Actions pipelines</strong> for continuous integration and deployment. Optimized database performance and infrastructure automation.</p>
+      </div>
+    </div>
+    
+    <div class="timeline-item" style="animation-delay: 0.3s">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Junior Developer</h3>
+        <h4>Startup Inc</h4>
+        <p class="timeline-date">2020 - 2022</p>
+        <p>Full-stack development with React and Node.js. Built RESTful APIs and responsive web applications.</p>
+      </div>
+    </div>
+    
+    <div class="timeline-item" style="animation-delay: 0.4s">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>BSc Computer Science</h3>
+        <h4>University</h4>
+        <p class="timeline-date">2016 - 2020</p>
+        <p>Graduated with honors. Focus on data structures, algorithms, and machine learning.</p>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+---
+
+## Section 4: Project Gallery {#gallery-section}
+
+```{=html}
+<div class="section-container">
+  <h2 class="section-title">Featured Projects</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=500" alt="CI/CD Pipeline">
+      <div class="gallery-overlay">
+        <h4>CI/CD Pipeline Automation</h4>
+        <p>GitHub Actions + Docker + K8s</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500" alt="Cloud Infrastructure">
+      <div class="gallery-overlay">
+        <h4>AWS Data Lake</h4>
+        <p>Medallion architecture with IaC</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500" alt="Infrastructure">
+      <div class="gallery-overlay">
+        <h4>Infrastructure as Code</h4>
+        <p>Terraform + AWS automation</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=500" alt="Orchestration">
+      <div class="gallery-overlay">
+        <h4>Step Functions Orchestration</h4>
+        <p>Serverless workflow automation</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500" alt="Containerization">
+      <div class="gallery-overlay">
+        <h4>Container Orchestration</h4>
+        <p>Docker + Kubernetes deployment</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500" alt="Monitoring">
+      <div class="gallery-overlay">
+        <h4>Monitoring & Observability</h4>
+        <p>CloudWatch + automated alerts</p>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+---
+
+## Section 5: Stats & Metrics {#stats-section}
+
+```{ojs}
+//| echo: false
+
+statsChart = {
+  const data = [
+    { label: "Projects", value: 50, icon: "📁" },
+    { label: "Commits", value: 5000, icon: "💻" },
+    { label: "Stars", value: 250, icon: "⭐" },
+    { label: "Years Exp", value: 6, icon: "📅" }
+  ];
+  
+  const container = d3.create("div")
+    .attr("class", "stats-grid");
+  
+  const cards = container.selectAll(".stat-card")
+    .data(data)
+    .join("div")
+    .attr("class", "stat-card")
+    .style("opacity", 0)
+    .html(d => `
+      <div style="font-size: 3em;">${d.icon}</div>
+      <div class="stat-number">0</div>
+      <div class="stat-label">${d.label}</div>
+    `);
+  
+  // Animate in
+  cards.transition()
+    .duration(800)
+    .delay((d, i) => i * 200)
+    .style("opacity", 1);
+  
+  // Count up animation
+  cards.each(function(d, i) {
+    const card = d3.select(this);
+    const numberEl = card.select(".stat-number");
+    
+    setTimeout(() => {
+      d3.transition()
+        .duration(2000)
+        .tween("count", () => {
+          const interpolate = d3.interpolateNumber(0, d.value);
+          return t => {
+            numberEl.text(Math.round(interpolate(t)));
+          };
+        });
+    }, i * 200);
+  });
+  
+  return container.node();
+}
+```
+
+---
+
+## Section 6: Contact Form {#contact-section}
+
+```{=html}
+<div class="section-container">
+  <h2 class="section-title">Get In Touch</h2>
+  <div style="max-width: 600px; margin: 0 auto;">
+    <form id="contactForm" style="background: rgba(255,255,255,0.05); padding: 40px; border-radius: 15px; border: 2px solid rgba(74, 144, 226, 0.3);">
+      <div style="margin-bottom: 20px;">
+        <label style="display: block; margin-bottom: 8px; color: #4a90e2;">Name</label>
+        <input type="text" placeholder="Your name" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: white;">
+      </div>
+      <div style="margin-bottom: 20px;">
+        <label style="display: block; margin-bottom: 8px; color: #4a90e2;">Email</label>
+        <input type="email" placeholder="your@email.com" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: white;">
+      </div>
+      <div style="margin-bottom: 20px;">
+        <label style="display: block; margin-bottom: 8px; color: #4a90e2;">Message</label>
+        <textarea rows="5" placeholder="Your message..." style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: white; resize: vertical;"></textarea>
+      </div>
+      <button type="submit" style="width: 100%; padding: 15px; background: linear-gradient(135deg, #667eea, #764ba2); border: none; border-radius: 8px; color: white; font-size: 1.1em; font-weight: bold; cursor: pointer; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        Send Message
+      </button>
+    </form>
+  </div>
+</div>
+
+<script>
+function scrollToSection(index) {
+  const sections = document.querySelectorAll('.section-container, #bubble-section');
+  sections[index]?.scrollIntoView({ behavior: 'smooth' });
+  
+  document.querySelectorAll('.nav-dot').forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+}
+
+// Update active dot on scroll
+window.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('.section-container, #bubble-section');
+  const dots = document.querySelectorAll('.nav-dot');
+  
+  sections.forEach((section, index) => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= 100 && rect.bottom >= 100) {
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+    }
+  });
+});
+
+// Form submission
+document.getElementById('contactForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  alert('Message sent! (Demo only)');
+});
+</script>
+```
