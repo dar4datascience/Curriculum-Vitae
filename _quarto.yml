@@ -15,13 +15,16 @@ website:
   site-url: https://dar4datascience.github.io/Curriculum-Vitae/
   repo-url: https://github.com/dar4datascience/Curriculum-Vitae
   repo-actions: [edit, issue]
+  page-navigation: false
   
   navbar:
-    background: primary
+    background: "#1a1a2e"
     logo: favicon.ico
     title: "Daniel Amieva Rodriguez"
     right:
-      - text: "Home"
+      - text: "Portfolio"
+        href: portfolio_animations_complete.qmd
+      - text: "About"
         href: index.qmd
       - text: "Download CV"
         href: danielamievarodriguez_cv.pdf
