@@ -749,53 +749,53 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="stats-section" class="level2">
 <h2 class="anchored" data-anchor-id="stats-section">Section 5: Stats &amp; Metrics</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="531" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 530;"><span id="cb2-531"><a href="#cb2-531" aria-hidden="true" tabindex="-1"></a>statsChart <span class="op">=</span> {</span>
-<span id="cb2-532"><a href="#cb2-532" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> data <span class="op">=</span> [</span>
-<span id="cb2-533"><a href="#cb2-533" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">label</span><span class="op">:</span> <span class="st">"Projects"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"📁"</span> }<span class="op">,</span></span>
-<span id="cb2-534"><a href="#cb2-534" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">label</span><span class="op">:</span> <span class="st">"Commits"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">5000</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"💻"</span> }<span class="op">,</span></span>
-<span id="cb2-535"><a href="#cb2-535" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">label</span><span class="op">:</span> <span class="st">"Stars"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">250</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"⭐"</span> }<span class="op">,</span></span>
-<span id="cb2-536"><a href="#cb2-536" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">label</span><span class="op">:</span> <span class="st">"Years Exp"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">6</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"📅"</span> }</span>
-<span id="cb2-537"><a href="#cb2-537" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">;</span></span>
-<span id="cb2-538"><a href="#cb2-538" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb2-539"><a href="#cb2-539" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> container <span class="op">=</span> d3<span class="op">.</span><span class="fu">create</span>(<span class="st">"div"</span>)</span>
-<span id="cb2-540"><a href="#cb2-540" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"class"</span><span class="op">,</span> <span class="st">"stats-grid"</span>)<span class="op">;</span></span>
-<span id="cb2-541"><a href="#cb2-541" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb2-542"><a href="#cb2-542" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cards <span class="op">=</span> container<span class="op">.</span><span class="fu">selectAll</span>(<span class="st">".stat-card"</span>)</span>
-<span id="cb2-543"><a href="#cb2-543" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">data</span>(data)</span>
-<span id="cb2-544"><a href="#cb2-544" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">join</span>(<span class="st">"div"</span>)</span>
-<span id="cb2-545"><a href="#cb2-545" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"class"</span><span class="op">,</span> <span class="st">"stat-card"</span>)</span>
-<span id="cb2-546"><a href="#cb2-546" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"opacity"</span><span class="op">,</span> <span class="dv">0</span>)</span>
-<span id="cb2-547"><a href="#cb2-547" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">html</span>(d <span class="kw">=&gt;</span> <span class="vs">`</span></span>
-<span id="cb2-548"><a href="#cb2-548" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div style="font-size: 3em;"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">icon</span><span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
-<span id="cb2-549"><a href="#cb2-549" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="stat-number"&gt;0&lt;/div&gt;</span></span>
-<span id="cb2-550"><a href="#cb2-550" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="stat-label"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">label</span><span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
-<span id="cb2-551"><a href="#cb2-551" aria-hidden="true" tabindex="-1"></a><span class="vs">    `</span>)<span class="op">;</span></span>
-<span id="cb2-552"><a href="#cb2-552" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb2-553"><a href="#cb2-553" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Animate in</span></span>
-<span id="cb2-554"><a href="#cb2-554" aria-hidden="true" tabindex="-1"></a>  cards<span class="op">.</span><span class="fu">transition</span>()</span>
-<span id="cb2-555"><a href="#cb2-555" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">duration</span>(<span class="dv">800</span>)</span>
-<span id="cb2-556"><a href="#cb2-556" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">delay</span>((d<span class="op">,</span> i) <span class="kw">=&gt;</span> i <span class="op">*</span> <span class="dv">200</span>)</span>
-<span id="cb2-557"><a href="#cb2-557" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"opacity"</span><span class="op">,</span> <span class="dv">1</span>)<span class="op">;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="537" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 536;"><span id="cb2-537"><a href="#cb2-537" aria-hidden="true" tabindex="-1"></a>statsChart <span class="op">=</span> {</span>
+<span id="cb2-538"><a href="#cb2-538" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> data <span class="op">=</span> [</span>
+<span id="cb2-539"><a href="#cb2-539" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">label</span><span class="op">:</span> <span class="st">"Projects"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"📁"</span> }<span class="op">,</span></span>
+<span id="cb2-540"><a href="#cb2-540" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">label</span><span class="op">:</span> <span class="st">"Commits"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">5000</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"💻"</span> }<span class="op">,</span></span>
+<span id="cb2-541"><a href="#cb2-541" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">label</span><span class="op">:</span> <span class="st">"Stars"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">250</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"⭐"</span> }<span class="op">,</span></span>
+<span id="cb2-542"><a href="#cb2-542" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">label</span><span class="op">:</span> <span class="st">"Years Exp"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">6</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"📅"</span> }</span>
+<span id="cb2-543"><a href="#cb2-543" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">;</span></span>
+<span id="cb2-544"><a href="#cb2-544" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-545"><a href="#cb2-545" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> container <span class="op">=</span> d3<span class="op">.</span><span class="fu">create</span>(<span class="st">"div"</span>)</span>
+<span id="cb2-546"><a href="#cb2-546" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"class"</span><span class="op">,</span> <span class="st">"stats-grid"</span>)<span class="op">;</span></span>
+<span id="cb2-547"><a href="#cb2-547" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-548"><a href="#cb2-548" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cards <span class="op">=</span> container<span class="op">.</span><span class="fu">selectAll</span>(<span class="st">".stat-card"</span>)</span>
+<span id="cb2-549"><a href="#cb2-549" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">data</span>(data)</span>
+<span id="cb2-550"><a href="#cb2-550" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">join</span>(<span class="st">"div"</span>)</span>
+<span id="cb2-551"><a href="#cb2-551" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"class"</span><span class="op">,</span> <span class="st">"stat-card"</span>)</span>
+<span id="cb2-552"><a href="#cb2-552" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"opacity"</span><span class="op">,</span> <span class="dv">0</span>)</span>
+<span id="cb2-553"><a href="#cb2-553" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">html</span>(d <span class="kw">=&gt;</span> <span class="vs">`</span></span>
+<span id="cb2-554"><a href="#cb2-554" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div style="font-size: 3em;"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">icon</span><span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb2-555"><a href="#cb2-555" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="stat-number"&gt;0&lt;/div&gt;</span></span>
+<span id="cb2-556"><a href="#cb2-556" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="stat-label"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">label</span><span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb2-557"><a href="#cb2-557" aria-hidden="true" tabindex="-1"></a><span class="vs">    `</span>)<span class="op">;</span></span>
 <span id="cb2-558"><a href="#cb2-558" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb2-559"><a href="#cb2-559" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Count up animation</span></span>
-<span id="cb2-560"><a href="#cb2-560" aria-hidden="true" tabindex="-1"></a>  cards<span class="op">.</span><span class="fu">each</span>(<span class="kw">function</span>(d<span class="op">,</span> i) {</span>
-<span id="cb2-561"><a href="#cb2-561" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> card <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="kw">this</span>)<span class="op">;</span></span>
-<span id="cb2-562"><a href="#cb2-562" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> numberEl <span class="op">=</span> card<span class="op">.</span><span class="fu">select</span>(<span class="st">".stat-number"</span>)<span class="op">;</span></span>
-<span id="cb2-563"><a href="#cb2-563" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb2-564"><a href="#cb2-564" aria-hidden="true" tabindex="-1"></a>    <span class="pp">setTimeout</span>(() <span class="kw">=&gt;</span> {</span>
-<span id="cb2-565"><a href="#cb2-565" aria-hidden="true" tabindex="-1"></a>      d3<span class="op">.</span><span class="fu">transition</span>()</span>
-<span id="cb2-566"><a href="#cb2-566" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">duration</span>(<span class="dv">2000</span>)</span>
-<span id="cb2-567"><a href="#cb2-567" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">tween</span>(<span class="st">"count"</span><span class="op">,</span> () <span class="kw">=&gt;</span> {</span>
-<span id="cb2-568"><a href="#cb2-568" aria-hidden="true" tabindex="-1"></a>          <span class="kw">const</span> interpolate <span class="op">=</span> d3<span class="op">.</span><span class="fu">interpolateNumber</span>(<span class="dv">0</span><span class="op">,</span> d<span class="op">.</span><span class="at">value</span>)<span class="op">;</span></span>
-<span id="cb2-569"><a href="#cb2-569" aria-hidden="true" tabindex="-1"></a>          <span class="cf">return</span> t <span class="kw">=&gt;</span> {</span>
-<span id="cb2-570"><a href="#cb2-570" aria-hidden="true" tabindex="-1"></a>            numberEl<span class="op">.</span><span class="fu">text</span>(<span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(<span class="fu">interpolate</span>(t)))<span class="op">;</span></span>
-<span id="cb2-571"><a href="#cb2-571" aria-hidden="true" tabindex="-1"></a>          }<span class="op">;</span></span>
-<span id="cb2-572"><a href="#cb2-572" aria-hidden="true" tabindex="-1"></a>        })<span class="op">;</span></span>
-<span id="cb2-573"><a href="#cb2-573" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span> i <span class="op">*</span> <span class="dv">200</span>)<span class="op">;</span></span>
-<span id="cb2-574"><a href="#cb2-574" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
-<span id="cb2-575"><a href="#cb2-575" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb2-576"><a href="#cb2-576" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> container<span class="op">.</span><span class="fu">node</span>()<span class="op">;</span></span>
-<span id="cb2-577"><a href="#cb2-577" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb2-559"><a href="#cb2-559" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Animate in</span></span>
+<span id="cb2-560"><a href="#cb2-560" aria-hidden="true" tabindex="-1"></a>  cards<span class="op">.</span><span class="fu">transition</span>()</span>
+<span id="cb2-561"><a href="#cb2-561" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">duration</span>(<span class="dv">800</span>)</span>
+<span id="cb2-562"><a href="#cb2-562" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">delay</span>((d<span class="op">,</span> i) <span class="kw">=&gt;</span> i <span class="op">*</span> <span class="dv">200</span>)</span>
+<span id="cb2-563"><a href="#cb2-563" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"opacity"</span><span class="op">,</span> <span class="dv">1</span>)<span class="op">;</span></span>
+<span id="cb2-564"><a href="#cb2-564" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-565"><a href="#cb2-565" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Count up animation</span></span>
+<span id="cb2-566"><a href="#cb2-566" aria-hidden="true" tabindex="-1"></a>  cards<span class="op">.</span><span class="fu">each</span>(<span class="kw">function</span>(d<span class="op">,</span> i) {</span>
+<span id="cb2-567"><a href="#cb2-567" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> card <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="kw">this</span>)<span class="op">;</span></span>
+<span id="cb2-568"><a href="#cb2-568" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> numberEl <span class="op">=</span> card<span class="op">.</span><span class="fu">select</span>(<span class="st">".stat-number"</span>)<span class="op">;</span></span>
+<span id="cb2-569"><a href="#cb2-569" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-570"><a href="#cb2-570" aria-hidden="true" tabindex="-1"></a>    <span class="pp">setTimeout</span>(() <span class="kw">=&gt;</span> {</span>
+<span id="cb2-571"><a href="#cb2-571" aria-hidden="true" tabindex="-1"></a>      d3<span class="op">.</span><span class="fu">transition</span>()</span>
+<span id="cb2-572"><a href="#cb2-572" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">duration</span>(<span class="dv">2000</span>)</span>
+<span id="cb2-573"><a href="#cb2-573" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">tween</span>(<span class="st">"count"</span><span class="op">,</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-574"><a href="#cb2-574" aria-hidden="true" tabindex="-1"></a>          <span class="kw">const</span> interpolate <span class="op">=</span> d3<span class="op">.</span><span class="fu">interpolateNumber</span>(<span class="dv">0</span><span class="op">,</span> d<span class="op">.</span><span class="at">value</span>)<span class="op">;</span></span>
+<span id="cb2-575"><a href="#cb2-575" aria-hidden="true" tabindex="-1"></a>          <span class="cf">return</span> t <span class="kw">=&gt;</span> {</span>
+<span id="cb2-576"><a href="#cb2-576" aria-hidden="true" tabindex="-1"></a>            numberEl<span class="op">.</span><span class="fu">text</span>(<span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(<span class="fu">interpolate</span>(t)))<span class="op">;</span></span>
+<span id="cb2-577"><a href="#cb2-577" aria-hidden="true" tabindex="-1"></a>          }<span class="op">;</span></span>
+<span id="cb2-578"><a href="#cb2-578" aria-hidden="true" tabindex="-1"></a>        })<span class="op">;</span></span>
+<span id="cb2-579"><a href="#cb2-579" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span> i <span class="op">*</span> <span class="dv">200</span>)<span class="op">;</span></span>
+<span id="cb2-580"><a href="#cb2-580" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb2-581"><a href="#cb2-581" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-582"><a href="#cb2-582" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> container<span class="op">.</span><span class="fu">node</span>()<span class="op">;</span></span>
+<span id="cb2-583"><a href="#cb2-583" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="declaration">
 

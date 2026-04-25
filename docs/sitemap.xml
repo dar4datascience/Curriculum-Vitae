@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://dar4datascience.github.io/Curriculum-Vitae/portfolio_animations_complete.html</loc>
-    <lastmod>2026-04-25T06:58:43.203Z</lastmod>
+    <lastmod>2026-04-25T07:07:17.884Z</lastmod>
   </url>
   <url>
     <loc>https://dar4datascience.github.io/Curriculum-Vitae/bubble_animation_demo.html</loc>
@@ -11,5 +11,9 @@
   <url>
     <loc>https://dar4datascience.github.io/Curriculum-Vitae/index.html</loc>
     <lastmod>2026-04-25T06:33:27.687Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dar4datascience.github.io/Curriculum-Vitae/AutoCV.html</loc>
+    <lastmod>2026-04-25T07:26:37.481Z</lastmod>
   </url>
 </urlset>
