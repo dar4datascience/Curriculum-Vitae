@@ -10,7 +10,7 @@ cvcolor: 4b0082 # electric indigo 6f00ff # han purple 5218fa
 cvfont: comfortaa #texlive fonts like raleway,fetamont,comfortaa, gillius
 cvmeta:
   - title: Current Role
-    left: "Senior Business Developer Engineer @ Rackspace"
+    left: "Senior Data Engineer @ TeamStation AI"
     right: "`r params$contact_info`" 
   - title: Techs
     left: "`r params$skills`" 
