@@ -1,12 +1,77 @@
+# R and RStudio
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
-
-cv-master/
-.secrets
 .Renviron
+
+# Quarto
+/.quarto/
+**/*.quarto_ipynb
+*_cache/
+*_files/
+.luarc.json
+
+# Quarto website output (docs/ is published to gh-pages)
+# Keep docs/ tracked for GitHub Pages deployment
+# But ignore intermediate build files
+index_files/
+site_libs/
+AutoCV_files/
+
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.toc
+*.tex
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# Targets pipeline
+_targets/
+!_targets.R
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.venv/
+venv/
+ENV/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.positai
+
+# Secrets and credentials
+.secrets
+*.key
+*.pem
+.env
+
+# Project specific
+cv-master/
 resume.Rmd
 resume.html
 
-/.quarto/
+# Temporary files
+*.tmp
+*.bak
+*~
