@@ -1,5 +1,39 @@
 project:
-  title: "danielamievarodriguez_cv"
+  type: website
+  title: "Daniel Amieva Rodriguez - CV"
+  output-dir: docs
+  render:
+    - "*.qmd"
+    - "!*SUMMARY.md"
+    - "!*GUIDE.md"
+    - "!*README.md"
+
+website:
+  title: "Daniel Amieva Rodriguez"
+  description: "Senior Data Engineer | AWS Specialist | AI Integration Expert"
+  favicon: favicon.ico
+  site-url: https://dar4datascience.github.io/Curriculum-Vitae/
+  repo-url: https://github.com/dar4datascience/Curriculum-Vitae
+  repo-actions: [edit, issue]
+  
+  navbar:
+    background: primary
+    logo: favicon.ico
+    title: "Daniel Amieva Rodriguez"
+    right:
+      - text: "Home"
+        href: index.qmd
+      - text: "Download CV"
+        href: danielamievarodriguez_cv.pdf
+      - icon: github
+        href: https://github.com/dar4datascience
+        
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    smooth-scroll: true
 
 
 
