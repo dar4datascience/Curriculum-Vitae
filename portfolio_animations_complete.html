@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Complete Portfolio Animations – Daniel Amieva Rodriguez</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./favicon.ico" rel="icon">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-354e37c0d73d1fd0c9e94eb60912b4c1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="portfolio-styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./favicon.ico" alt="" class="navbar-logo light-content">
+    <img src="./favicon.ico" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Daniel Amieva Rodriguez</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">📄 CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./portfolio.html"> 
+<span class="menu-text">📊 Portfolio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./animations.html"> 
+<span class="menu-text">✨ Animations</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./danielamievarodriguez_cv.pdf"> <i class="bi bi-download" role="img">
+</i> 
+<span class="menu-text">Download PDF</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/dar4datascience"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Complete Portfolio Animations</h1>
+<p class="subtitle lead">All yesenia.io animations replicated in Quarto</p>
+</div>
+
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+.section-container {
+  min-height: 100vh;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #4a90e2;
+  font-weight: 700;
+}
+
+.nav-dots {
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.nav-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+  margin: 15px 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-dot:hover, .nav-dot.active {
+  background: #4a90e2;
+  transform: scale(1.3);
+}
+
+.tech-carousel {
+  overflow: hidden;
+  padding: 40px 0;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 15px;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  gap: 30px;
+}
+
+.carousel-item {
+  min-width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.carousel-item:hover {
+  transform: scale(1.1);
+  background: rgba(74, 144, 226, 0.2);
+}
+
+.carousel-item img {
+  max-width: 50px;
+  max-height: 50px;
+  filter: brightness(0.9);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  aspect-ratio: 1;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+  color: white;
+}
+
+.gallery-item:hover .gallery-overlay {
+  transform: translateY(0);
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #4a90e2, #764ba2);
+}
+
+.timeline-item {
+  margin-bottom: 50px;
+  position: relative;
+  opacity: 0;
+  animation: fadeInUp 0.6s forwards;
+}
+
+.timeline-item:nth-child(odd) {
+  padding-right: 50%;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  padding-left: 50%;
+  text-align: left;
+}
+
+.timeline-content {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #4a90e2;
+  position: relative;
+}
+
+.timeline-dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #4a90e2;
+  border-radius: 50%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid #1a1a2e;
+  z-index: 1;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), rgba(118, 75, 162, 0.1));
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid rgba(74, 144, 226, 0.3);
+  transition: all 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+  border-color: #4a90e2;
+  box-shadow: 0 10px 30px rgba(74, 144, 226, 0.3);
+}
+
+.stat-number {
+  font-size: 3em;
+  font-weight: bold;
+  color: #4a90e2;
+  margin: 10px 0;
+}
+
+.stat-label {
+  font-size: 1.1em;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.particle-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+</style>
+<!-- Navigation Dots -->
+<div class="nav-dots">
+  <div class="nav-dot active" onclick="scrollToSection(0)"></div>
+  <div class="nav-dot" onclick="scrollToSection(1)"></div>
+  <div class="nav-dot" onclick="scrollToSection(2)"></div>
+  <div class="nav-dot" onclick="scrollToSection(3)"></div>
+  <div class="nav-dot" onclick="scrollToSection(4)"></div>
+  <div class="nav-dot" onclick="scrollToSection(5)"></div>
+</div>
+<section id="bubble-section" class="level2">
+<h2 class="anchored" data-anchor-id="bubble-section">Section 1: Interactive Bubble Chart</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="263" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 262;"><span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a>d3 <span class="op">=</span> <span class="pp">require</span>(<span class="st">"d3@7"</span>)</span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a><span class="co">// Bubble data</span></span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>bubbleData <span class="op">=</span> [</span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">id</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">name</span><span class="op">:</span> <span class="st">"Python"</span><span class="op">,</span> <span class="dt">category</span><span class="op">:</span> <span class="st">"Programming"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">95</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"🐍"</span>}<span class="op">,</span></span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">id</span><span class="op">:</span> <span class="dv">2</span><span class="op">,</span> <span class="dt">name</span><span class="op">:</span> <span class="st">"AWS"</span><span class="op">,</span> <span class="dt">category</span><span class="op">:</span> <span class="st">"Cloud"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">90</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"☁️"</span>}<span class="op">,</span></span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">id</span><span class="op">:</span> <span class="dv">3</span><span class="op">,</span> <span class="dt">name</span><span class="op">:</span> <span class="st">"CI/CD"</span><span class="op">,</span> <span class="dt">category</span><span class="op">:</span> <span class="st">"DevOps"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">88</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"�"</span>}<span class="op">,</span></span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">id</span><span class="op">:</span> <span class="dv">4</span><span class="op">,</span> <span class="dt">name</span><span class="op">:</span> <span class="st">"Docker"</span><span class="op">,</span> <span class="dt">category</span><span class="op">:</span> <span class="st">"DevOps"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">85</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"🐳"</span>}<span class="op">,</span></span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">id</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> <span class="dt">name</span><span class="op">:</span> <span class="st">"GitHub Actions"</span><span class="op">,</span> <span class="dt">category</span><span class="op">:</span> <span class="st">"DevOps"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">85</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"⚙️"</span>}<span class="op">,</span></span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">id</span><span class="op">:</span> <span class="dv">6</span><span class="op">,</span> <span class="dt">name</span><span class="op">:</span> <span class="st">"Data Engineering"</span><span class="op">,</span> <span class="dt">category</span><span class="op">:</span> <span class="st">"Data"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">92</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"📊"</span>}<span class="op">,</span></span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">id</span><span class="op">:</span> <span class="dv">7</span><span class="op">,</span> <span class="dt">name</span><span class="op">:</span> <span class="st">"Terraform"</span><span class="op">,</span> <span class="dt">category</span><span class="op">:</span> <span class="st">"IaC"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">75</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"🏗️"</span>}<span class="op">,</span></span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">id</span><span class="op">:</span> <span class="dv">8</span><span class="op">,</span> <span class="dt">name</span><span class="op">:</span> <span class="st">"ML/AI"</span><span class="op">,</span> <span class="dt">category</span><span class="op">:</span> <span class="st">"AI"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">80</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"🤖"</span>}<span class="op">,</span></span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">id</span><span class="op">:</span> <span class="dv">9</span><span class="op">,</span> <span class="dt">name</span><span class="op">:</span> <span class="st">"PostgreSQL"</span><span class="op">,</span> <span class="dt">category</span><span class="op">:</span> <span class="st">"Database"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">82</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"🐘"</span>}<span class="op">,</span></span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">id</span><span class="op">:</span> <span class="dv">10</span><span class="op">,</span> <span class="dt">name</span><span class="op">:</span> <span class="st">"Step Functions"</span><span class="op">,</span> <span class="dt">category</span><span class="op">:</span> <span class="st">"Orchestration"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">88</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"🔀"</span>}<span class="op">,</span></span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">id</span><span class="op">:</span> <span class="dv">11</span><span class="op">,</span> <span class="dt">name</span><span class="op">:</span> <span class="st">"Lambda"</span><span class="op">,</span> <span class="dt">category</span><span class="op">:</span> <span class="st">"Serverless"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">90</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"λ"</span>}<span class="op">,</span></span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>  {<span class="dt">id</span><span class="op">:</span> <span class="dv">12</span><span class="op">,</span> <span class="dt">name</span><span class="op">:</span> <span class="st">"Kubernetes"</span><span class="op">,</span> <span class="dt">category</span><span class="op">:</span> <span class="st">"DevOps"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">70</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"☸️"</span>}</span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>bubbleWidth <span class="op">=</span> <span class="dv">900</span></span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>bubbleHeight <span class="op">=</span> <span class="dv">600</span></span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>bubbleCenterX <span class="op">=</span> bubbleWidth <span class="op">*</span> <span class="fl">0.5</span></span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>bubbleCenterY <span class="op">=</span> bubbleHeight <span class="op">*</span> <span class="fl">0.5</span></span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a>bubbleNodes <span class="op">=</span> bubbleData<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> ({</span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>  <span class="op">...</span>d<span class="op">,</span></span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> bubbleCenterX <span class="op">+</span> (<span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>() <span class="op">-</span> <span class="fl">0.5</span>) <span class="op">*</span> bubbleWidth <span class="op">*</span> <span class="fl">0.8</span><span class="op">,</span></span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> bubbleCenterY <span class="op">+</span> (<span class="bu">Math</span><span class="op">.</span><span class="fu">random</span>() <span class="op">-</span> <span class="fl">0.5</span>) <span class="op">*</span> bubbleHeight <span class="op">*</span> <span class="fl">0.8</span><span class="op">,</span></span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a>  <span class="dt">r</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span></span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a>  <span class="dt">radius</span><span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>(d<span class="op">.</span><span class="at">value</span>) <span class="op">*</span> <span class="dv">6</span><span class="op">,</span></span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>  <span class="dt">fx</span><span class="op">:</span> <span class="kw">null</span><span class="op">,</span></span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>  <span class="dt">fy</span><span class="op">:</span> <span class="kw">null</span></span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a>}))</span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>bubbleSimulation <span class="op">=</span> d3<span class="op">.</span><span class="fu">forceSimulation</span>(bubbleNodes)</span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">force</span>(<span class="st">'charge'</span><span class="op">,</span> d3<span class="op">.</span><span class="fu">forceManyBody</span>()<span class="op">.</span><span class="fu">strength</span>(<span class="dv">5</span>))</span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">force</span>(<span class="st">'collide'</span><span class="op">,</span> d3<span class="op">.</span><span class="fu">forceCollide</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">r</span> <span class="op">+</span> <span class="dv">3</span>))</span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">force</span>(<span class="st">'x'</span><span class="op">,</span> d3<span class="op">.</span><span class="fu">forceX</span>(bubbleCenterX)<span class="op">.</span><span class="fu">strength</span>(<span class="fl">0.05</span>))</span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">force</span>(<span class="st">'y'</span><span class="op">,</span> d3<span class="op">.</span><span class="fu">forceY</span>(bubbleCenterY)<span class="op">.</span><span class="fu">strength</span>(<span class="fl">0.05</span>))</span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>bubbleChart <span class="op">=</span> {</span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> svg <span class="op">=</span> d3<span class="op">.</span><span class="fu">create</span>(<span class="st">"svg"</span>)</span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"width"</span><span class="op">,</span> bubbleWidth)</span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"height"</span><span class="op">,</span> bubbleHeight)</span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"background"</span><span class="op">,</span> <span class="st">"linear-gradient(135deg, #667eea 0%, #764ba2 100%)"</span>)</span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"border-radius"</span><span class="op">,</span> <span class="st">"15px"</span>)<span class="op">;</span></span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> focusedNode <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> node <span class="op">=</span> svg<span class="op">.</span><span class="fu">selectAll</span>(<span class="st">".node"</span>)</span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">data</span>(bubbleNodes)</span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">join</span>(<span class="st">"g"</span>)</span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"class"</span><span class="op">,</span> <span class="st">"node"</span>)</span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"cursor"</span><span class="op">,</span> <span class="st">"pointer"</span>)<span class="op">;</span></span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a>  node<span class="op">.</span><span class="fu">append</span>(<span class="st">"circle"</span>)</span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"r"</span><span class="op">,</span> <span class="dv">0</span>)</span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"fill"</span><span class="op">,</span> <span class="st">"#fff"</span>)</span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"stroke"</span><span class="op">,</span> <span class="st">"#333"</span>)</span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"stroke-width"</span><span class="op">,</span> <span class="dv">2</span>)</span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">transition</span>()</span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">duration</span>(<span class="dv">2000</span>)</span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">delay</span>((d<span class="op">,</span> i) <span class="kw">=&gt;</span> i <span class="op">*</span> <span class="dv">100</span>)</span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">ease</span>(d3<span class="op">.</span><span class="at">easeElasticOut</span>)</span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"r"</span><span class="op">,</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">radius</span>)<span class="op">;</span></span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a>  node<span class="op">.</span><span class="fu">append</span>(<span class="st">"text"</span>)</span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"text-anchor"</span><span class="op">,</span> <span class="st">"middle"</span>)</span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"dy"</span><span class="op">,</span> <span class="st">"0.35em"</span>)</span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"font-size"</span><span class="op">,</span> d <span class="kw">=&gt;</span> <span class="vs">`</span><span class="sc">${</span>d<span class="op">.</span><span class="at">radius</span> <span class="op">*</span> <span class="fl">0.6</span><span class="sc">}</span><span class="vs">px`</span>)</span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"pointer-events"</span><span class="op">,</span> <span class="st">"none"</span>)</span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">text</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">icon</span>)<span class="op">;</span></span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a>  node<span class="op">.</span><span class="fu">on</span>(<span class="st">"click"</span><span class="op">,</span> <span class="kw">function</span>(<span class="bu">event</span><span class="op">,</span> d) {</span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a>    <span class="bu">event</span><span class="op">.</span><span class="fu">stopPropagation</span>()<span class="op">;</span></span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (d <span class="op">===</span> focusedNode) <span class="cf">return</span><span class="op">;</span></span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (focusedNode) {</span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a>      d3<span class="op">.</span><span class="fu">transition</span>()<span class="op">.</span><span class="fu">duration</span>(<span class="dv">1500</span>)</span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">tween</span>(<span class="st">"reset"</span><span class="op">,</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a>          <span class="kw">const</span> ir <span class="op">=</span> d3<span class="op">.</span><span class="fu">interpolateNumber</span>(focusedNode<span class="op">.</span><span class="at">r</span><span class="op">,</span> focusedNode<span class="op">.</span><span class="at">radius</span>)<span class="op">;</span></span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a>          <span class="cf">return</span> t <span class="kw">=&gt;</span> { focusedNode<span class="op">.</span><span class="at">r</span> <span class="op">=</span> <span class="fu">ir</span>(t)<span class="op">;</span> }<span class="op">;</span></span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a>        })<span class="op">;</span></span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a>    focusedNode <span class="op">=</span> d<span class="op">;</span></span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a>    node<span class="op">.</span><span class="fu">style</span>(<span class="st">"opacity"</span><span class="op">,</span> n <span class="kw">=&gt;</span> n <span class="op">===</span> d <span class="op">?</span> <span class="dv">1</span> <span class="op">:</span> <span class="fl">0.3</span>)<span class="op">;</span></span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a>    d3<span class="op">.</span><span class="fu">transition</span>()<span class="op">.</span><span class="fu">duration</span>(<span class="dv">1500</span>)</span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a>      <span class="op">.</span><span class="fu">tween</span>(<span class="st">"zoom"</span><span class="op">,</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> ix <span class="op">=</span> d3<span class="op">.</span><span class="fu">interpolateNumber</span>(d<span class="op">.</span><span class="at">x</span><span class="op">,</span> bubbleCenterX)<span class="op">;</span></span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> iy <span class="op">=</span> d3<span class="op">.</span><span class="fu">interpolateNumber</span>(d<span class="op">.</span><span class="at">y</span><span class="op">,</span> bubbleCenterY)<span class="op">;</span></span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> ir <span class="op">=</span> d3<span class="op">.</span><span class="fu">interpolateNumber</span>(d<span class="op">.</span><span class="at">r</span><span class="op">,</span> <span class="dv">100</span>)<span class="op">;</span></span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> t <span class="kw">=&gt;</span> {</span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a>          d<span class="op">.</span><span class="at">x</span> <span class="op">=</span> <span class="fu">ix</span>(t)<span class="op">;</span></span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a>          d<span class="op">.</span><span class="at">y</span> <span class="op">=</span> <span class="fu">iy</span>(t)<span class="op">;</span></span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a>          d<span class="op">.</span><span class="at">r</span> <span class="op">=</span> <span class="fu">ir</span>(t)<span class="op">;</span></span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a>        }<span class="op">;</span></span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a>      })<span class="op">;</span></span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a>  svg<span class="op">.</span><span class="fu">on</span>(<span class="st">"click"</span><span class="op">,</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (focusedNode) {</span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a>      d3<span class="op">.</span><span class="fu">transition</span>()<span class="op">.</span><span class="fu">duration</span>(<span class="dv">1500</span>)</span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">tween</span>(<span class="st">"reset"</span><span class="op">,</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a>          <span class="kw">const</span> ir <span class="op">=</span> d3<span class="op">.</span><span class="fu">interpolateNumber</span>(focusedNode<span class="op">.</span><span class="at">r</span><span class="op">,</span> focusedNode<span class="op">.</span><span class="at">radius</span>)<span class="op">;</span></span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a>          <span class="cf">return</span> t <span class="kw">=&gt;</span> { focusedNode<span class="op">.</span><span class="at">r</span> <span class="op">=</span> <span class="fu">ir</span>(t)<span class="op">;</span> }<span class="op">;</span></span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a>        })<span class="op">;</span></span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a>      focusedNode <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></span>
+<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a>      node<span class="op">.</span><span class="fu">style</span>(<span class="st">"opacity"</span><span class="op">,</span> <span class="dv">1</span>)<span class="op">;</span></span>
+<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a>  bubbleSimulation<span class="op">.</span><span class="fu">on</span>(<span class="st">"tick"</span><span class="op">,</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a>    node<span class="op">.</span><span class="fu">attr</span>(<span class="st">"transform"</span><span class="op">,</span> d <span class="kw">=&gt;</span> <span class="vs">`translate(</span><span class="sc">${</span>d<span class="op">.</span><span class="at">x</span><span class="sc">}</span><span class="vs">,</span><span class="sc">${</span>d<span class="op">.</span><span class="at">y</span><span class="sc">}</span><span class="vs">)`</span>)<span class="op">;</span></span>
+<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a>    node<span class="op">.</span><span class="fu">select</span>(<span class="st">"circle"</span>)<span class="op">.</span><span class="fu">attr</span>(<span class="st">"r"</span><span class="op">,</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">r</span> <span class="op">||</span> d<span class="op">.</span><span class="at">radius</span>)<span class="op">;</span></span>
+<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a>  bubbleNodes<span class="op">.</span><span class="fu">forEach</span>((d<span class="op">,</span> i) <span class="kw">=&gt;</span> {</span>
+<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a>    <span class="pp">setTimeout</span>(() <span class="kw">=&gt;</span> { d<span class="op">.</span><span class="at">r</span> <span class="op">=</span> d<span class="op">.</span><span class="at">radius</span><span class="op">;</span> }<span class="op">,</span> i <span class="op">*</span> <span class="dv">100</span>)<span class="op">;</span></span>
+<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> svg<span class="op">.</span><span class="fu">node</span>()<span class="op">;</span></span>
+<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-6" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-7" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-8" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-9" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="carousel-section" class="level2">
+<h2 class="anchored" data-anchor-id="carousel-section">Section 2: Tech Stack Carousel</h2>
+<div class="section-container">
+  <h2 class="section-title anchored">Technologies &amp; Tools - DevOps &amp; Data Engineering Focus</h2>
+  <div class="tech-carousel">
+    <div class="carousel-track">
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Actions"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab CI"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Apache Airflow"></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Actions"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab CI"></div>
+      <div class="carousel-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Apache Airflow"></div>
+    </div>
+  </div>
+</div>
+<hr>
+</section>
+<section id="timeline-section" class="level2">
+<h2 class="anchored" data-anchor-id="timeline-section">Section 3: Experience Timeline</h2>
+<div class="section-container">
+  <h2 class="section-title anchored">Professional Journey</h2>
+  <div class="timeline">
+    <div class="timeline-item" style="animation-delay: 0.1s">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3 class="anchored">Senior Data Engineer</h3>
+        <h4 class="anchored">TeamStation AI</h4>
+        <p class="timeline-date">May 2025 - Present</p>
+        <p>Built data lake from scratch with medallion architecture (AWS Glue, Step Functions, Lambda). Implemented <strong>CI/CD pipelines with GitHub Actions</strong> for automated deployments. Integrated AI-powered BI tools with natural language querying. <strong>Infrastructure as Code</strong> with automated testing and deployment workflows.</p>
+      </div>
+    </div>
+    
+    <div class="timeline-item" style="animation-delay: 0.2s">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3 class="anchored">Data Engineer</h3>
+        <h4 class="anchored">Previous Company</h4>
+        <p class="timeline-date">2022 - 2025</p>
+        <p>Developed ETL pipelines with <strong>automated CI/CD workflows</strong>. Implemented <strong>Docker containerization</strong> and orchestration. Built <strong>GitHub Actions pipelines</strong> for continuous integration and deployment. Optimized database performance and infrastructure automation.</p>
+      </div>
+    </div>
+    
+    <div class="timeline-item" style="animation-delay: 0.3s">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3 class="anchored">Junior Developer</h3>
+        <h4 class="anchored">Startup Inc</h4>
+        <p class="timeline-date">2020 - 2022</p>
+        <p>Full-stack development with React and Node.js. Built RESTful APIs and responsive web applications.</p>
+      </div>
+    </div>
+    
+    <div class="timeline-item" style="animation-delay: 0.4s">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3 class="anchored">BSc Computer Science</h3>
+        <h4 class="anchored">University</h4>
+        <p class="timeline-date">2016 - 2020</p>
+        <p>Graduated with honors. Focus on data structures, algorithms, and machine learning.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+</section>
+<section id="gallery-section" class="level2">
+<h2 class="anchored" data-anchor-id="gallery-section">Section 4: Project Gallery</h2>
+<div class="section-container">
+  <h2 class="section-title anchored">Featured Projects</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=500" alt="CI/CD Pipeline">
+      <div class="gallery-overlay">
+        <h4 class="anchored">CI/CD Pipeline Automation</h4>
+        <p>GitHub Actions + Docker + K8s</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500" alt="Cloud Infrastructure">
+      <div class="gallery-overlay">
+        <h4 class="anchored">AWS Data Lake</h4>
+        <p>Medallion architecture with IaC</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500" alt="Infrastructure">
+      <div class="gallery-overlay">
+        <h4 class="anchored">Infrastructure as Code</h4>
+        <p>Terraform + AWS automation</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=500" alt="Orchestration">
+      <div class="gallery-overlay">
+        <h4 class="anchored">Step Functions Orchestration</h4>
+        <p>Serverless workflow automation</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500" alt="Containerization">
+      <div class="gallery-overlay">
+        <h4 class="anchored">Container Orchestration</h4>
+        <p>Docker + Kubernetes deployment</p>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500" alt="Monitoring">
+      <div class="gallery-overlay">
+        <h4 class="anchored">Monitoring &amp; Observability</h4>
+        <p>CloudWatch + automated alerts</p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+</section>
+<section id="stats-section" class="level2">
+<h2 class="anchored" data-anchor-id="stats-section">Section 5: Stats &amp; Metrics</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="537" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 536;"><span id="cb2-537"><a href="#cb2-537" aria-hidden="true" tabindex="-1"></a>statsChart <span class="op">=</span> {</span>
+<span id="cb2-538"><a href="#cb2-538" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> data <span class="op">=</span> [</span>
+<span id="cb2-539"><a href="#cb2-539" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">label</span><span class="op">:</span> <span class="st">"Projects"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"📁"</span> }<span class="op">,</span></span>
+<span id="cb2-540"><a href="#cb2-540" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">label</span><span class="op">:</span> <span class="st">"Commits"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">5000</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"💻"</span> }<span class="op">,</span></span>
+<span id="cb2-541"><a href="#cb2-541" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">label</span><span class="op">:</span> <span class="st">"Stars"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">250</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"⭐"</span> }<span class="op">,</span></span>
+<span id="cb2-542"><a href="#cb2-542" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">label</span><span class="op">:</span> <span class="st">"Years Exp"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="dv">6</span><span class="op">,</span> <span class="dt">icon</span><span class="op">:</span> <span class="st">"📅"</span> }</span>
+<span id="cb2-543"><a href="#cb2-543" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">;</span></span>
+<span id="cb2-544"><a href="#cb2-544" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-545"><a href="#cb2-545" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> container <span class="op">=</span> d3<span class="op">.</span><span class="fu">create</span>(<span class="st">"div"</span>)</span>
+<span id="cb2-546"><a href="#cb2-546" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"class"</span><span class="op">,</span> <span class="st">"stats-grid"</span>)<span class="op">;</span></span>
+<span id="cb2-547"><a href="#cb2-547" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-548"><a href="#cb2-548" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cards <span class="op">=</span> container<span class="op">.</span><span class="fu">selectAll</span>(<span class="st">".stat-card"</span>)</span>
+<span id="cb2-549"><a href="#cb2-549" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">data</span>(data)</span>
+<span id="cb2-550"><a href="#cb2-550" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">join</span>(<span class="st">"div"</span>)</span>
+<span id="cb2-551"><a href="#cb2-551" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">attr</span>(<span class="st">"class"</span><span class="op">,</span> <span class="st">"stat-card"</span>)</span>
+<span id="cb2-552"><a href="#cb2-552" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"opacity"</span><span class="op">,</span> <span class="dv">0</span>)</span>
+<span id="cb2-553"><a href="#cb2-553" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">html</span>(d <span class="kw">=&gt;</span> <span class="vs">`</span></span>
+<span id="cb2-554"><a href="#cb2-554" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div style="font-size: 3em;"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">icon</span><span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb2-555"><a href="#cb2-555" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="stat-number"&gt;0&lt;/div&gt;</span></span>
+<span id="cb2-556"><a href="#cb2-556" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="stat-label"&gt;</span><span class="sc">${</span>d<span class="op">.</span><span class="at">label</span><span class="sc">}</span><span class="vs">&lt;/div&gt;</span></span>
+<span id="cb2-557"><a href="#cb2-557" aria-hidden="true" tabindex="-1"></a><span class="vs">    `</span>)<span class="op">;</span></span>
+<span id="cb2-558"><a href="#cb2-558" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-559"><a href="#cb2-559" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Animate in</span></span>
+<span id="cb2-560"><a href="#cb2-560" aria-hidden="true" tabindex="-1"></a>  cards<span class="op">.</span><span class="fu">transition</span>()</span>
+<span id="cb2-561"><a href="#cb2-561" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">duration</span>(<span class="dv">800</span>)</span>
+<span id="cb2-562"><a href="#cb2-562" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">delay</span>((d<span class="op">,</span> i) <span class="kw">=&gt;</span> i <span class="op">*</span> <span class="dv">200</span>)</span>
+<span id="cb2-563"><a href="#cb2-563" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">style</span>(<span class="st">"opacity"</span><span class="op">,</span> <span class="dv">1</span>)<span class="op">;</span></span>
+<span id="cb2-564"><a href="#cb2-564" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-565"><a href="#cb2-565" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Count up animation</span></span>
+<span id="cb2-566"><a href="#cb2-566" aria-hidden="true" tabindex="-1"></a>  cards<span class="op">.</span><span class="fu">each</span>(<span class="kw">function</span>(d<span class="op">,</span> i) {</span>
+<span id="cb2-567"><a href="#cb2-567" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> card <span class="op">=</span> d3<span class="op">.</span><span class="fu">select</span>(<span class="kw">this</span>)<span class="op">;</span></span>
+<span id="cb2-568"><a href="#cb2-568" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> numberEl <span class="op">=</span> card<span class="op">.</span><span class="fu">select</span>(<span class="st">".stat-number"</span>)<span class="op">;</span></span>
+<span id="cb2-569"><a href="#cb2-569" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-570"><a href="#cb2-570" aria-hidden="true" tabindex="-1"></a>    <span class="pp">setTimeout</span>(() <span class="kw">=&gt;</span> {</span>
+<span id="cb2-571"><a href="#cb2-571" aria-hidden="true" tabindex="-1"></a>      d3<span class="op">.</span><span class="fu">transition</span>()</span>
+<span id="cb2-572"><a href="#cb2-572" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">duration</span>(<span class="dv">2000</span>)</span>
+<span id="cb2-573"><a href="#cb2-573" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span><span class="fu">tween</span>(<span class="st">"count"</span><span class="op">,</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-574"><a href="#cb2-574" aria-hidden="true" tabindex="-1"></a>          <span class="kw">const</span> interpolate <span class="op">=</span> d3<span class="op">.</span><span class="fu">interpolateNumber</span>(<span class="dv">0</span><span class="op">,</span> d<span class="op">.</span><span class="at">value</span>)<span class="op">;</span></span>
+<span id="cb2-575"><a href="#cb2-575" aria-hidden="true" tabindex="-1"></a>          <span class="cf">return</span> t <span class="kw">=&gt;</span> {</span>
+<span id="cb2-576"><a href="#cb2-576" aria-hidden="true" tabindex="-1"></a>            numberEl<span class="op">.</span><span class="fu">text</span>(<span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(<span class="fu">interpolate</span>(t)))<span class="op">;</span></span>
+<span id="cb2-577"><a href="#cb2-577" aria-hidden="true" tabindex="-1"></a>          }<span class="op">;</span></span>
+<span id="cb2-578"><a href="#cb2-578" aria-hidden="true" tabindex="-1"></a>        })<span class="op">;</span></span>
+<span id="cb2-579"><a href="#cb2-579" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span> i <span class="op">*</span> <span class="dv">200</span>)<span class="op">;</span></span>
+<span id="cb2-580"><a href="#cb2-580" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb2-581"><a href="#cb2-581" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-582"><a href="#cb2-582" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> container<span class="op">.</span><span class="fu">node</span>()<span class="op">;</span></span>
+<span id="cb2-583"><a href="#cb2-583" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="contact-section" class="level2">
+<h2 class="anchored" data-anchor-id="contact-section">Section 6: Contact Form</h2>
+<div class="section-container">
+  <h2 class="section-title anchored">Get In Touch</h2>
+  <div style="max-width: 600px; margin: 0 auto;">
+    <form id="contactForm" style="background: rgba(255,255,255,0.05); padding: 40px; border-radius: 15px; border: 2px solid rgba(74, 144, 226, 0.3);">
+      <div style="margin-bottom: 20px;">
+        <label style="display: block; margin-bottom: 8px; color: #4a90e2;">Name</label>
+        <input type="text" placeholder="Your name" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: white;">
+      </div>
+      <div style="margin-bottom: 20px;">
+        <label style="display: block; margin-bottom: 8px; color: #4a90e2;">Email</label>
+        <input type="email" placeholder="your@email.com" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: white;">
+      </div>
+      <div style="margin-bottom: 20px;">
+        <label style="display: block; margin-bottom: 8px; color: #4a90e2;">Message</label>
+        <textarea rows="5" placeholder="Your message..." style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: white; resize: vertical;"></textarea>
+      </div>
+      <button type="submit" style="width: 100%; padding: 15px; background: linear-gradient(135deg, #667eea, #764ba2); border: none; border-radius: 8px; color: white; font-size: 1.1em; font-weight: bold; cursor: pointer; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        Send Message
+      </button>
+    </form>
+  </div>
+</div>
+
+<script>
+function scrollToSection(index) {
+  const sections = document.querySelectorAll('.section-container, #bubble-section');
+  sections[index]?.scrollIntoView({ behavior: 'smooth' });
+  
+  document.querySelectorAll('.nav-dot').forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+}
+
+// Update active dot on scroll
+window.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('.section-container, #bubble-section');
+  const dots = document.querySelectorAll('.nav-dot');
+  
+  sections.forEach((section, index) => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= 100 && rect.bottom >= 100) {
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+    }
+  });
+});
+
+// Form submission
+document.getElementById('contactForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  alert('Message sent! (Demo only)');
+});
+</script>
+
+
+</section>
+
+</main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IlxuZDMgPSByZXF1aXJlKFwiZDNAN1wiKVxuXG4vLyBCdWJibGUgZGF0YVxuYnViYmxlRGF0YSA9IFtcbiAge2lkOiAxLCBuYW1lOiBcIlB5dGhvblwiLCBjYXRlZ29yeTogXCJQcm9ncmFtbWluZ1wiLCB2YWx1ZTogOTUsIGljb246IFwi8J+QjVwifSxcbiAge2lkOiAyLCBuYW1lOiBcIkFXU1wiLCBjYXRlZ29yeTogXCJDbG91ZFwiLCB2YWx1ZTogOTAsIGljb246IFwi4piB77iPXCJ9LFxuICB7aWQ6IDMsIG5hbWU6IFwiQ0kvQ0RcIiwgY2F0ZWdvcnk6IFwiRGV2T3BzXCIsIHZhbHVlOiA4OCwgaWNvbjogXCLvv71cIn0sXG4gIHtpZDogNCwgbmFtZTogXCJEb2NrZXJcIiwgY2F0ZWdvcnk6IFwiRGV2T3BzXCIsIHZhbHVlOiA4NSwgaWNvbjogXCLwn5CzXCJ9LFxuICB7aWQ6IDUsIG5hbWU6IFwiR2l0SHViIEFjdGlvbnNcIiwgY2F0ZWdvcnk6IFwiRGV2T3BzXCIsIHZhbHVlOiA4NSwgaWNvbjogXCLimpnvuI9cIn0sXG4gIHtpZDogNiwgbmFtZTogXCJEYXRhIEVuZ2luZWVyaW5nXCIsIGNhdGVnb3J5OiBcIkRhdGFcIiwgdmFsdWU6IDkyLCBpY29uOiBcIvCfk4pcIn0sXG4gIHtpZDogNywgbmFtZTogXCJUZXJyYWZvcm1cIiwgY2F0ZWdvcnk6IFwiSWFDXCIsIHZhbHVlOiA3NSwgaWNvbjogXCLwn4+X77iPXCJ9LFxuICB7aWQ6IDgsIG5hbWU6IFwiTUwvQUlcIiwgY2F0ZWdvcnk6IFwiQUlcIiwgdmFsdWU6IDgwLCBpY29uOiBcIvCfpJZcIn0sXG4gIHtpZDogOSwgbmFtZTogXCJQb3N0Z3JlU1FMXCIsIGNhdGVnb3J5OiBcIkRhdGFiYXNlXCIsIHZhbHVlOiA4MiwgaWNvbjogXCLwn5CYXCJ9LFxuICB7aWQ6IDEwLCBuYW1lOiBcIlN0ZXAgRnVuY3Rpb25zXCIsIGNhdGVnb3J5OiBcIk9yY2hlc3RyYXRpb25cIiwgdmFsdWU6IDg4LCBpY29uOiBcIvCflIBcIn0sXG4gIHtpZDogMTEsIG5hbWU6IFwiTGFtYmRhXCIsIGNhdGVnb3J5OiBcIlNlcnZlcmxlc3NcIiwgdmFsdWU6IDkwLCBpY29uOiBcIs67XCJ9LFxuICB7aWQ6IDEyLCBuYW1lOiBcIkt1YmVybmV0ZXNcIiwgY2F0ZWdvcnk6IFwiRGV2T3BzXCIsIHZhbHVlOiA3MCwgaWNvbjogXCLimLjvuI9cIn1cbl1cblxuYnViYmxlV2lkdGggPSA5MDBcbmJ1YmJsZUhlaWdodCA9IDYwMFxuYnViYmxlQ2VudGVyWCA9IGJ1YmJsZVdpZHRoICogMC41XG5idWJibGVDZW50ZXJZID0gYnViYmxlSGVpZ2h0ICogMC41XG5cbmJ1YmJsZU5vZGVzID0gYnViYmxlRGF0YS5tYXAoZCA9PiAoe1xuICAuLi5kLFxuICB4OiBidWJibGVDZW50ZXJYICsgKE1hdGgucmFuZG9tKCkgLSAwLjUpICogYnViYmxlV2lkdGggKiAwLjgsXG4gIHk6IGJ1YmJsZUNlbnRlclkgKyAoTWF0aC5yYW5kb20oKSAtIDAuNSkgKiBidWJibGVIZWlnaHQgKiAwLjgsXG4gIHI6IDAsXG4gIHJhZGl1czogTWF0aC5zcXJ0KGQudmFsdWUpICogNixcbiAgZng6IG51bGwsXG4gIGZ5OiBudWxsXG59KSlcblxuYnViYmxlU2ltdWxhdGlvbiA9IGQzLmZvcmNlU2ltdWxhdGlvbihidWJibGVOb2RlcylcbiAgLmZvcmNlKCdjaGFyZ2UnLCBkMy5mb3JjZU1hbnlCb2R5KCkuc3RyZW5ndGgoNSkpXG4gIC5mb3JjZSgnY29sbGlkZScsIGQzLmZvcmNlQ29sbGlkZShkID0+IGQuciArIDMpKVxuICAuZm9yY2UoJ3gnLCBkMy5mb3JjZVgoYnViYmxlQ2VudGVyWCkuc3RyZW5ndGgoMC4wNSkpXG4gIC5mb3JjZSgneScsIGQzLmZvcmNlWShidWJibGVDZW50ZXJZKS5zdHJlbmd0aCgwLjA1KSlcblxuYnViYmxlQ2hhcnQgPSB7XG4gIGNvbnN0IHN2ZyA9IGQzLmNyZWF0ZShcInN2Z1wiKVxuICAgIC5hdHRyKFwid2lkdGhcIiwgYnViYmxlV2lkdGgpXG4gICAgLmF0dHIoXCJoZWlnaHRcIiwgYnViYmxlSGVpZ2h0KVxuICAgIC5zdHlsZShcImJhY2tncm91bmRcIiwgXCJsaW5lYXItZ3JhZGllbnQoMTM1ZGVnLCAjNjY3ZWVhIDAlLCAjNzY0YmEyIDEwMCUpXCIpXG4gICAgLnN0eWxlKFwiYm9yZGVyLXJhZGl1c1wiLCBcIjE1cHhcIik7XG5cbiAgbGV0IGZvY3VzZWROb2RlID0gbnVsbDtcblxuICBjb25zdCBub2RlID0gc3ZnLnNlbGVjdEFsbChcIi5ub2RlXCIpXG4gICAgLmRhdGEoYnViYmxlTm9kZXMpXG4gICAgLmpvaW4oXCJnXCIpXG4gICAgLmF0dHIoXCJjbGFzc1wiLCBcIm5vZGVcIilcbiAgICAuc3R5bGUoXCJjdXJzb3JcIiwgXCJwb2ludGVyXCIpO1xuXG4gIG5vZGUuYXBwZW5kKFwiY2lyY2xlXCIpXG4gICAgLmF0dHIoXCJyXCIsIDApXG4gICAgLnN0eWxlKFwiZmlsbFwiLCBcIiNmZmZcIilcbiAgICAuc3R5bGUoXCJzdHJva2VcIiwgXCIjMzMzXCIpXG4gICAgLnN0eWxlKFwic3Ryb2tlLXdpZHRoXCIsIDIpXG4gICAgLnRyYW5zaXRpb24oKVxuICAgIC5kdXJhdGlvbigyMDAwKVxuICAgIC5kZWxheSgoZCwgaSkgPT4gaSAqIDEwMClcbiAgICAuZWFzZShkMy5lYXNlRWxhc3RpY091dClcbiAgICAuYXR0cihcInJcIiwgZCA9PiBkLnJhZGl1cyk7XG5cbiAgbm9kZS5hcHBlbmQoXCJ0ZXh0XCIpXG4gICAgLmF0dHIoXCJ0ZXh0LWFuY2hvclwiLCBcIm1pZGRsZVwiKVxuICAgIC5hdHRyKFwiZHlcIiwgXCIwLjM1ZW1cIilcbiAgICAuc3R5bGUoXCJmb250LXNpemVcIiwgZCA9PiBgJHtkLnJhZGl1cyAqIDAuNn1weGApXG4gICAgLnN0eWxlKFwicG9pbnRlci1ldmVudHNcIiwgXCJub25lXCIpXG4gICAgLnRleHQoZCA9PiBkLmljb24pO1xuXG4gIG5vZGUub24oXCJjbGlja1wiLCBmdW5jdGlvbihldmVudCwgZCkge1xuICAgIGV2ZW50LnN0b3BQcm9wYWdhdGlvbigpO1xuICAgIGlmIChkID09PSBmb2N1c2VkTm9kZSkgcmV0dXJuO1xuICAgIFxuICAgIGlmIChmb2N1c2VkTm9kZSkge1xuICAgICAgZDMudHJhbnNpdGlvbigpLmR1cmF0aW9uKDE1MDApXG4gICAgICAgIC50d2VlbihcInJlc2V0XCIsICgpID0+IHtcbiAgICAgICAgICBjb25zdCBpciA9IGQzLmludGVycG9sYXRlTnVtYmVyKGZvY3VzZWROb2RlLnIsIGZvY3VzZWROb2RlLnJhZGl1cyk7XG4gICAgICAgICAgcmV0dXJuIHQgPT4geyBmb2N1c2VkTm9kZS5yID0gaXIodCk7IH07XG4gICAgICAgIH0pO1xuICAgIH1cbiAgICBcbiAgICBmb2N1c2VkTm9kZSA9IGQ7XG4gICAgbm9kZS5zdHlsZShcIm9wYWNpdHlcIiwgbiA9PiBuID09PSBkID8gMSA6IDAuMyk7XG4gICAgXG4gICAgZDMudHJhbnNpdGlvbigpLmR1cmF0aW9uKDE1MDApXG4gICAgICAudHdlZW4oXCJ6b29tXCIsICgpID0+IHtcbiAgICAgICAgY29uc3QgaXggPSBkMy5pbnRlcnBvbGF0ZU51bWJlcihkLngsIGJ1YmJsZUNlbnRlclgpO1xuICAgICAgICBjb25zdCBpeSA9IGQzLmludGVycG9sYXRlTnVtYmVyKGQueSwgYnViYmxlQ2VudGVyWSk7XG4gICAgICAgIGNvbnN0IGlyID0gZDMuaW50ZXJwb2xhdGVOdW1iZXIoZC5yLCAxMDApO1xuICAgICAgICByZXR1cm4gdCA9PiB7XG4gICAgICAgICAgZC54ID0gaXgodCk7XG4gICAgICAgICAgZC55ID0gaXkodCk7XG4gICAgICAgICAgZC5yID0gaXIodCk7XG4gICAgICAgIH07XG4gICAgICB9KTtcbiAgfSk7XG5cbiAgc3ZnLm9uKFwiY2xpY2tcIiwgKCkgPT4ge1xuICAgIGlmIChmb2N1c2VkTm9kZSkge1xuICAgICAgZDMudHJhbnNpdGlvbigpLmR1cmF0aW9uKDE1MDApXG4gICAgICAgIC50d2VlbihcInJlc2V0XCIsICgpID0+IHtcbiAgICAgICAgICBjb25zdCBpciA9IGQzLmludGVycG9sYXRlTnVtYmVyKGZvY3VzZWROb2RlLnIsIGZvY3VzZWROb2RlLnJhZGl1cyk7XG4gICAgICAgICAgcmV0dXJuIHQgPT4geyBmb2N1c2VkTm9kZS5yID0gaXIodCk7IH07XG4gICAgICAgIH0pO1xuICAgICAgZm9jdXNlZE5vZGUgPSBudWxsO1xuICAgICAgbm9kZS5zdHlsZShcIm9wYWNpdHlcIiwgMSk7XG4gICAgfVxuICB9KTtcblxuICBidWJibGVTaW11bGF0aW9uLm9uKFwidGlja1wiLCAoKSA9PiB7XG4gICAgbm9kZS5hdHRyKFwidHJhbnNmb3JtXCIsIGQgPT4gYHRyYW5zbGF0ZSgke2QueH0sJHtkLnl9KWApO1xuICAgIG5vZGUuc2VsZWN0KFwiY2lyY2xlXCIpLmF0dHIoXCJyXCIsIGQgPT4gZC5yIHx8IGQucmFkaXVzKTtcbiAgfSk7XG5cbiAgYnViYmxlTm9kZXMuZm9yRWFjaCgoZCwgaSkgPT4ge1xuICAgIHNldFRpbWVvdXQoKCkgPT4geyBkLnIgPSBkLnJhZGl1czsgfSwgaSAqIDEwMCk7XG4gIH0pO1xuXG4gIHJldHVybiBzdmcubm9kZSgpO1xufVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiXG5zdGF0c0NoYXJ0ID0ge1xuICBjb25zdCBkYXRhID0gW1xuICAgIHsgbGFiZWw6IFwiUHJvamVjdHNcIiwgdmFsdWU6IDUwLCBpY29uOiBcIvCfk4FcIiB9LFxuICAgIHsgbGFiZWw6IFwiQ29tbWl0c1wiLCB2YWx1ZTogNTAwMCwgaWNvbjogXCLwn5K7XCIgfSxcbiAgICB7IGxhYmVsOiBcIlN0YXJzXCIsIHZhbHVlOiAyNTAsIGljb246IFwi4q2QXCIgfSxcbiAgICB7IGxhYmVsOiBcIlllYXJzIEV4cFwiLCB2YWx1ZTogNiwgaWNvbjogXCLwn5OFXCIgfVxuICBdO1xuICBcbiAgY29uc3QgY29udGFpbmVyID0gZDMuY3JlYXRlKFwiZGl2XCIpXG4gICAgLmF0dHIoXCJjbGFzc1wiLCBcInN0YXRzLWdyaWRcIik7XG4gIFxuICBjb25zdCBjYXJkcyA9IGNvbnRhaW5lci5zZWxlY3RBbGwoXCIuc3RhdC1jYXJkXCIpXG4gICAgLmRhdGEoZGF0YSlcbiAgICAuam9pbihcImRpdlwiKVxuICAgIC5hdHRyKFwiY2xhc3NcIiwgXCJzdGF0LWNhcmRcIilcbiAgICAuc3R5bGUoXCJvcGFjaXR5XCIsIDApXG4gICAgLmh0bWwoZCA9PiBgXG4gICAgICA8ZGl2IHN0eWxlPVwiZm9udC1zaXplOiAzZW07XCI+JHtkLmljb259PC9kaXY+XG4gICAgICA8ZGl2IGNsYXNzPVwic3RhdC1udW1iZXJcIj4wPC9kaXY+XG4gICAgICA8ZGl2IGNsYXNzPVwic3RhdC1sYWJlbFwiPiR7ZC5sYWJlbH08L2Rpdj5cbiAgICBgKTtcbiAgXG4gIC8vIEFuaW1hdGUgaW5cbiAgY2FyZHMudHJhbnNpdGlvbigpXG4gICAgLmR1cmF0aW9uKDgwMClcbiAgICAuZGVsYXkoKGQsIGkpID0+IGkgKiAyMDApXG4gICAgLnN0eWxlKFwib3BhY2l0eVwiLCAxKTtcbiAgXG4gIC8vIENvdW50IHVwIGFuaW1hdGlvblxuICBjYXJkcy5lYWNoKGZ1bmN0aW9uKGQsIGkpIHtcbiAgICBjb25zdCBjYXJkID0gZDMuc2VsZWN0KHRoaXMpO1xuICAgIGNvbnN0IG51bWJlckVsID0gY2FyZC5zZWxlY3QoXCIuc3RhdC1udW1iZXJcIik7XG4gICAgXG4gICAgc2V0VGltZW91dCgoKSA9PiB7XG4gICAgICBkMy50cmFuc2l0aW9uKClcbiAgICAgICAgLmR1cmF0aW9uKDIwMDApXG4gICAgICAgIC50d2VlbihcImNvdW50XCIsICgpID0+IHtcbiAgICAgICAgICBjb25zdCBpbnRlcnBvbGF0ZSA9IGQzLmludGVycG9sYXRlTnVtYmVyKDAsIGQudmFsdWUpO1xuICAgICAgICAgIHJldHVybiB0ID0+IHtcbiAgICAgICAgICAgIG51bWJlckVsLnRleHQoTWF0aC5yb3VuZChpbnRlcnBvbGF0ZSh0KSkpO1xuICAgICAgICAgIH07XG4gICAgICAgIH0pO1xuICAgIH0sIGkgKiAyMDApO1xuICB9KTtcbiAgXG4gIHJldHVybiBjb250YWluZXIubm9kZSgpO1xufVxuIn1dfQ==
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../..";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/dar4datascience\.github\.io\/Curriculum-Vitae\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/dar4datascience/Curriculum-Vitae/edit/main/portfolio_animations_complete.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dar4datascience/Curriculum-Vitae/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
