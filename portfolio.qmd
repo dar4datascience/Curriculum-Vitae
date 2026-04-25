@@ -4,7 +4,7 @@ subtitle: "Building Scalable Data Infrastructure & AI-Powered Solutions"
 format:
   html:
     theme: cosmo
-    css: portfolio-styles.css
+    css: styles.css
     toc: false
     page-layout: full
 ---
@@ -26,17 +26,11 @@ format:
   margin-bottom: 1rem;
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  margin: 3rem 0;
-}
-
 .project-card {
   background: white;
   border-radius: 15px;
   padding: 2rem;
+  margin-bottom: 2rem;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   border-left: 5px solid #667eea;
   transition: all 0.3s ease;
@@ -95,6 +89,15 @@ format:
   font-size: 0.85rem;
   color: #666;
 }
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 3rem 0 2rem 0;
+  color: #2d3748;
+  border-left: 5px solid #667eea;
+  padding-left: 1rem;
+}
 </style>
 
 <div class="hero-portfolio">
@@ -103,11 +106,11 @@ format:
     Real-world implementations of scalable data infrastructure, AI integration, and cloud-native solutions
   </p>
 </div>
-```
 
-## Featured Projects
+<h2 class="section-title">Featured Projects</h2>
 
-### 🏗️ Enterprise Data Lake - TeamStation AI
+<!-- Project 1: Data Lake -->
+<h3 style="font-size: 1.8rem; font-weight: 600; margin: 2rem 0 1rem 0; color: #667eea;">🏗️ Enterprise Data Lake - TeamStation AI</h3>
 
 <div class="project-card">
   <h3 class="project-title">Medallion Architecture Data Lake</h3>
@@ -122,11 +125,13 @@ format:
   <p><strong>Challenge:</strong> Build enterprise data lake from ground up for international clients with real-time streaming and batch processing capabilities.</p>
   
   <p><strong>Solution:</strong></p>
-  - Implemented medallion architecture (Bronze/Silver/Gold layers)
-  - Custom Python packages for data transformation
-  - Step Functions orchestration for complex workflows
-  - DMS streaming for real-time data ingestion
-  - S3-based data lake with partitioning strategy
+  <ul style="list-style: none; padding-left: 1rem;">
+    <li>• Implemented medallion architecture (Bronze/Silver/Gold layers)</li>
+    <li>• Custom Python packages for data transformation</li>
+    <li>• Step Functions orchestration for complex workflows</li>
+    <li>• DMS streaming for real-time data ingestion</li>
+    <li>• S3-based data lake with partitioning strategy</li>
+  </ul>
   
   <div class="metrics-grid">
     <div class="metric">
@@ -150,7 +155,8 @@ format:
   <p><strong>Impact:</strong> Enabled real-time analytics for business intelligence, reduced data processing time by 70%, and established foundation for AI/ML initiatives.</p>
 </div>
 
-### 🤖 AI-Powered BI Integration
+<!-- Project 2: AI BI -->
+<h3 style="font-size: 1.8rem; font-weight: 600; margin: 2rem 0 1rem 0; color: #667eea;">🤖 AI-Powered BI Integration</h3>
 
 <div class="project-card">
   <h3 class="project-title">Natural Language BI Querying</h3>
@@ -165,11 +171,13 @@ format:
   <p><strong>Challenge:</strong> Enable non-technical users to query complex data warehouse using natural language.</p>
   
   <p><strong>Solution:</strong></p>
-  - Integrated third-party BI tool with AI capabilities
-  - Implemented authentication flow to frontend application
-  - Built Snowflake schema with ad-hoc query flexibility
-  - Automated visualization generation based on query intent
-  - Created automation procedures for common BI operations
+  <ul style="list-style: none; padding-left: 1rem;">
+    <li>• Integrated third-party BI tool with AI capabilities</li>
+    <li>• Implemented authentication flow to frontend application</li>
+    <li>• Built Snowflake schema with ad-hoc query flexibility</li>
+    <li>• Automated visualization generation based on query intent</li>
+    <li>• Created automation procedures for common BI operations</li>
+  </ul>
   
   <div class="metrics-grid">
     <div class="metric">
@@ -189,7 +197,8 @@ format:
   <p><strong>Impact:</strong> Democratized data access across organization, reduced time-to-insight from days to minutes, enabled self-service analytics.</p>
 </div>
 
-### 🔄 CI/CD Pipeline Automation
+<!-- Project 3: CI/CD -->
+<h3 style="font-size: 1.8rem; font-weight: 600; margin: 2rem 0 1rem 0; color: #667eea;">🔄 CI/CD Pipeline Automation</h3>
 
 <div class="project-card">
   <h3 class="project-title">Infrastructure as Code & Deployment Automation</h3>
@@ -203,11 +212,13 @@ format:
   <p><strong>Challenge:</strong> Automate deployment of data infrastructure and ETL pipelines with zero downtime.</p>
   
   <p><strong>Solution:</strong></p>
-  - GitHub Actions workflows for automated testing and deployment
-  - Terraform modules for infrastructure provisioning
-  - Docker containerization for consistent environments
-  - Automated rollback mechanisms
-  - Infrastructure testing and validation
+  <ul style="list-style: none; padding-left: 1rem;">
+    <li>• GitHub Actions workflows for automated testing and deployment</li>
+    <li>• Terraform modules for infrastructure provisioning</li>
+    <li>• Docker containerization for consistent environments</li>
+    <li>• Automated rollback mechanisms</li>
+    <li>• Infrastructure testing and validation</li>
+  </ul>
   
   <div class="metrics-grid">
     <div class="metric">
@@ -227,7 +238,8 @@ format:
   <p><strong>Impact:</strong> Reduced deployment time from hours to minutes, eliminated manual errors, enabled rapid iteration and feature delivery.</p>
 </div>
 
-### 📚 AI-Enhanced Documentation System
+<!-- Project 4: Documentation -->
+<h3 style="font-size: 1.8rem; font-weight: 600; margin: 2rem 0 1rem 0; color: #667eea;">📚 AI-Enhanced Documentation System</h3>
 
 <div class="project-card">
   <h3 class="project-title">Unified Documentation with Quarto</h3>
@@ -241,11 +253,13 @@ format:
   <p><strong>Challenge:</strong> Create unified documentation system for complex data infrastructure that stays up-to-date.</p>
   
   <p><strong>Solution:</strong></p>
-  - Quarto-based documentation leveraging GitHub repositories
-  - AI enhancement for automatic documentation updates
-  - Covers Step Functions, Lambdas, custom packages
-  - Searchable knowledge base
-  - Automated deployment with GitHub Actions
+  <ul style="list-style: none; padding-left: 1rem;">
+    <li>• Quarto-based documentation leveraging GitHub repositories</li>
+    <li>• AI enhancement for automatic documentation updates</li>
+    <li>• Covers Step Functions, Lambdas, custom packages</li>
+    <li>• Searchable knowledge base</li>
+    <li>• Automated deployment with GitHub Actions</li>
+  </ul>
   
   <div class="metrics-grid">
     <div class="metric">
@@ -265,9 +279,8 @@ format:
   <p><strong>Impact:</strong> Reduced new team member onboarding from weeks to days, improved knowledge sharing, decreased support tickets.</p>
 </div>
 
-## Technical Architecture
+<h2 class="section-title">Technical Architecture</h2>
 
-```{=html}
 <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; margin: 2rem 0;">
   <h3 style="color: #667eea; margin-top: 0;">Core Technology Stack</h3>
   
@@ -311,11 +324,9 @@ format:
     </div>
   </div>
 </div>
-```
 
-## GitHub Activity
+<h2 class="section-title">GitHub Activity</h2>
 
-```{=html}
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
   <div>
     <img src="https://github-readme-stats.vercel.app/api?username=dar4datascience&show_icons=true&theme=radical&hide_border=true&bg_color=667eea&title_color=ffffff&text_color=ffffff&icon_color=ffffff" alt="GitHub Stats" style="width: 100%; border-radius: 10px;">
@@ -324,13 +335,11 @@ format:
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dar4datascience&layout=compact&theme=radical&hide_border=true&bg_color=764ba2&title_color=ffffff&text_color=ffffff" alt="Top Languages" style="width: 100%; border-radius: 10px;">
   </div>
 </div>
-```
 
----
-
-<div style="text-align: center; padding: 2rem; color: #666;">
+<div style="text-align: center; padding: 2rem; color: #666; margin-top: 3rem;">
   <p><strong>Want to discuss a project?</strong></p>
   <p>
     <a href="mailto:danielamieva@dar4datascience.com" style="color: #667eea; text-decoration: none; font-weight: 600;">📧 danielamieva@dar4datascience.com</a>
   </p>
 </div>
+```
