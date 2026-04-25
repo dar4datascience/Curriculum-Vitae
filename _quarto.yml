@@ -9,6 +9,9 @@ project:
     - "!*README.md"
     - "!bubble_animation_demo.qmd"
     - "!bubble_animation_advanced.qmd"
+  resources:
+    - "danielamievarodriguez_cv.pdf"
+    - "*.css"
 
 website:
   title: "Daniel Amieva Rodriguez"
