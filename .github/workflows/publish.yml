@@ -38,8 +38,8 @@ jobs:
       - name: Render CV PDF with targets
         run: Rscript -e "targets::tar_make()"
 
-      - name: Copy PDF to root for Quarto resources
-        run: cp docs/danielamievarodriguez_cv.pdf .
+      - name: Verify PDF created
+        run: ls -lh danielamievarodriguez_cv.pdf
 
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
@@ -47,8 +47,3 @@ jobs:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Verify PDF in deployment
-        run: |
-          echo "PDF files in docs:"
-          ls -lh docs/*.pdf || echo "No PDFs found"
