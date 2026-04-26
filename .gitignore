@@ -12,9 +12,9 @@
 *_files/
 .luarc.json
 
-# Quarto website output (docs/ is published to gh-pages)
-# Keep docs/ tracked for GitHub Pages deployment
-# But ignore intermediate build files
+# Quarto website output
+# GitHub Actions publishes to gh-pages branch, not docs/ folder
+docs/
 index_files/
 site_libs/
 AutoCV_files/
