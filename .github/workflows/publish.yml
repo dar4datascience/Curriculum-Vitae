@@ -36,7 +36,9 @@ jobs:
           cache-version: 1
 
       - name: Render CV PDF with targets
-        run: Rscript -e "targets::tar_make()"
+        run: |
+          Rscript -e "targets::tar_make()"
+          cp docs/danielamievarodriguez_cv.pdf .
 
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
