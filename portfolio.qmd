@@ -339,7 +339,7 @@ format:
 <div style="text-align: center; padding: 2rem; color: #666; margin-top: 3rem;">
   <p><strong>Want to discuss a project?</strong></p>
   <p>
-    <a href="mailto:danielamieva@dar4datascience.com" style="color: #667eea; text-decoration: none; font-weight: 600;">📧 danielamieva@dar4datascience.com</a>
+    <a href="mailto:linkedin.jobs.frequent526@passmail.net" style="color: #667eea; text-decoration: none; font-weight: 600;">📧 linkedin.jobs.frequent526@passmail.net</a>
   </p>
 </div>
 ```

@@ -190,7 +190,7 @@ Contact information fields
 ### In `_targets.R`:
 ```r
 cv_type <- "cv types/dar_cv_engineer_short.ods"  # Source file
-contact_info <- "danielamieva@dar4datascience.com"
+contact_info <- "linkedin.jobs.frequent526@passmail.net"
 ```
 
 ### In `AutoCV.qmd`:
