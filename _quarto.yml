@@ -4,6 +4,7 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+    - "!AutoCV.qmd"
     - "!*SUMMARY.md"
     - "!*GUIDE.md"
     - "!*README.md"
