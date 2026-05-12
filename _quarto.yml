@@ -15,6 +15,7 @@ project:
   resources:
     - "danielamievarodriguez_cv.pdf"
     - "custom.scss"
+    - "favicon.ico"
 
 website:
   title: "Daniel Amieva Rodriguez"
