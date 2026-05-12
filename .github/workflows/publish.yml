@@ -41,9 +41,16 @@ jobs:
       - name: Verify PDF created
         run: ls -lh danielamievarodriguez_cv.pdf
 
-      - name: Publish to GitHub Pages (and render)
+      - name: Render Quarto site
+        run: quarto render
+
+      - name: Copy PDF to docs
+        run: cp danielamievarodriguez_cv.pdf docs/
+
+      - name: Publish to GitHub Pages
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
+          render: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
