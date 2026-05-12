@@ -5,6 +5,8 @@ project:
   render:
     - "*.qmd"
     - "!AutoCV.qmd"
+    - "!portfolio.qmd"
+    - "!animations.qmd"
     - "!*SUMMARY.md"
     - "!*GUIDE.md"
     - "!*README.md"
@@ -27,13 +29,6 @@ website:
     background: "#1a1a2e"
     logo: favicon.ico
     title: "Daniel Amieva Rodriguez"
-    left:
-      - text: "📄 CV"
-        href: index.qmd
-      - text: "📊 Portfolio"
-        href: portfolio.qmd
-      - text: "✨ Animations"
-        href: animations.qmd
     right:
       - text: "Download PDF"
         href: danielamievarodriguez_cv.pdf
