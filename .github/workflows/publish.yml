@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pages: write
+      id-token: write
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -47,10 +49,10 @@ jobs:
       - name: Copy PDF to docs
         run: cp danielamievarodriguez_cv.pdf docs/
 
-      - name: Publish to GitHub Pages
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          target: gh-pages
-          render: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: docs/
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
