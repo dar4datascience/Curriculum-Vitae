@@ -67,6 +67,6 @@
     "href": "index.html#featured-projects",
     "title": "Daniel Amieva Rodriguez",
     "section": "Featured Projects",
-    "text": "Featured Projects\n\n  \n    \n    \n      CI/CD Pipeline Automation\n      GitHub Actions + Docker + K8s\n    \n  \n  \n    \n    \n      AWS Data Lake\n      Medallion architecture with IaC\n    \n  \n  \n    \n    \n      Infrastructure as Code\n      Terraform + AWS automation\n    \n  \n  \n    \n    \n      Step Functions Orchestration\n      Serverless workflow automation\n    \n  \n  \n    \n    \n      Container Orchestration\n      Docker + Kubernetes deployment\n    \n  \n  \n    \n    \n      Monitoring & Observability\n      CloudWatch + automated alerts\n    \n  \n\n\n\nBuilt with ❤️ using Quarto | Last updated: {r} Sys.Date()\nView Source on GitHub"
+    "text": "Featured Projects\n\n  \n    \n    \n      CI/CD Pipeline Automation\n      GitHub Actions + Docker + K8s\n    \n  \n  \n    \n    \n      AWS Data Lake\n      Medallion architecture with IaC\n    \n  \n  \n    \n    \n      Infrastructure as Code\n      Terraform + AWS automation\n    \n  \n  \n    \n    \n      Step Functions Orchestration\n      Serverless workflow automation\n    \n  \n  \n    \n    \n      Container Orchestration\n      Docker + Kubernetes deployment\n    \n  \n  \n    \n    \n      Monitoring & Observability\n      CloudWatch + automated alerts\n    \n  \n\n\n\nBuilt with ❤️ using Quarto | Last updated: 2026-05-13\nView Source on GitHub"
   }
 ]
