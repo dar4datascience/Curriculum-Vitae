@@ -5,6 +5,7 @@ format:
     css: custom.scss
     toc: false
     page-layout: full
+engine: knitr
 ---
 
 ```{=html}
@@ -413,7 +414,7 @@ Building scalable data infrastructure and AI-powered solutions for international
 ---
 
 ::: {style="text-align: center; padding: 2rem; color: #666; border-top: 2px solid #e2e8f0; margin-top: 3rem;"}
-Built with ❤️ using Quarto | Last updated: `{r} Sys.Date()`
+Built with ❤️ using Quarto | Last updated: `r Sys.Date()`
 
 [View Source on GitHub](https://github.com/dar4datascience/Curriculum-Vitae){style="color: #667eea;" target="_blank"}
 :::
