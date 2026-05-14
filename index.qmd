@@ -188,6 +188,8 @@ engine: knitr
   border-radius: 15px;
   cursor: pointer;
   aspect-ratio: 1;
+  display: block;
+  text-decoration: none;
 }
 
 .gallery-item img {
@@ -366,48 +368,55 @@ Building scalable data infrastructure and AI-powered solutions for international
 
 ```{=html}
 <div class="gallery-grid">
-  <div class="gallery-item">
-    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=500" alt="CI/CD Pipeline">
+  <a href="https://github.com/dar4datascience/Datos-Transporte-CDMX" target="_blank" class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=500" alt="Datos Transporte CDMX">
     <div class="gallery-overlay">
-      <h4>CI/CD Pipeline Automation</h4>
-      <p>GitHub Actions + Docker + K8s</p>
+      <h4>Datos Transporte CDMX</h4>
+      <p>Metrobus, luego metro</p>
     </div>
-  </div>
-  <div class="gallery-item">
-    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500" alt="Cloud Infrastructure">
+  </a>
+  <a href="https://github.com/dar4datascience/AWS-SAM-Cultura-CDMX" target="_blank" class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500" alt="AWS SAM Cultura CDMX">
     <div class="gallery-overlay">
-      <h4>AWS Data Lake</h4>
-      <p>Medallion architecture with IaC</p>
+      <h4>AWS SAM Cultura CDMX</h4>
+      <p>Serverless culture data pipeline</p>
     </div>
-  </div>
-  <div class="gallery-item">
-    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500" alt="Infrastructure">
+  </a>
+  <a href="https://github.com/dar4datascience/Dynamic-QR-code-on-a-shoestring" target="_blank" class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500" alt="Dynamic QR Code">
     <div class="gallery-overlay">
-      <h4>Infrastructure as Code</h4>
-      <p>Terraform + AWS automation</p>
+      <h4>Dynamic QR Code on a Shoestring</h4>
+      <p>Low-cost dynamic QR solution</p>
     </div>
-  </div>
-  <div class="gallery-item">
-    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=500" alt="Orchestration">
+  </a>
+  <a href="https://github.com/dar4datascience/Demo-Shiny-Gemini/tree/main" target="_blank" class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=500" alt="Demo Shiny Gemini">
     <div class="gallery-overlay">
-      <h4>Step Functions Orchestration</h4>
-      <p>Serverless workflow automation</p>
+      <h4>Demo Shiny Gemini</h4>
+      <p>Shiny app with Gemini integration</p>
     </div>
-  </div>
-  <div class="gallery-item">
-    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500" alt="Containerization">
+  </a>
+  <a href="https://github.com/dar4datascience/Catalogo-VideoClub" target="_blank" class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500" alt="Catalogo VideoClub">
     <div class="gallery-overlay">
-      <h4>Container Orchestration</h4>
-      <p>Docker + Kubernetes deployment</p>
+      <h4>Catalogo VideoClub</h4>
+      <p>Video club catalog application</p>
     </div>
-  </div>
-  <div class="gallery-item">
-    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500" alt="Monitoring">
+  </a>
+  <a href="https://github.com/dar4datascience/Observable-Movie-Showcase" target="_blank" class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500" alt="Observable Movie Showcase">
     <div class="gallery-overlay">
-      <h4>Monitoring & Observability</h4>
-      <p>CloudWatch + automated alerts</p>
+      <h4>Observable Movie Showcase</h4>
+      <p>Interactive movie data visualization</p>
     </div>
-  </div>
+  </a>
+  <a href="https://github.com/dar4datascience/Measuring-Inequality-with-Satellite-Images" target="_blank" class="gallery-item">
+    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500" alt="Measuring Inequality with Satellite Images">
+    <div class="gallery-overlay">
+      <h4>Measuring Inequality with Satellite Images</h4>
+      <p>Black Marble VNP46 research</p>
+    </div>
+  </a>
 </div>
 ```
 

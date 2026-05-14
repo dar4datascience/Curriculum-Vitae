@@ -75,3 +75,6 @@ resume.html
 *.tmp
 *.bak
 *~
+
+venv/*
+.cv_env/*
