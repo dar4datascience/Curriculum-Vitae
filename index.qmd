@@ -245,10 +245,10 @@ engine: knitr
 # Daniel Amieva Rodriguez
 
 ::: {.subtitle}
-Senior Data Engineer | AWS Cloud Architect | AI Integration Specialist
+Senior Data Engineer | GCP Cloud Architect | AI Integration Specialist
 :::
 
-Building scalable data infrastructure and AI-powered solutions for international clients. Specializing in AWS, data lakes, and intelligent automation.
+Building scalable data infrastructure and AI-powered solutions for international clients. Specializing in GCP, data lakes, and intelligent automation.
 
 ::: {.hero-buttons}
 [📄 Download CV](danielamievarodriguez_cv.pdf){.btn .btn-primary download="danielamievarodriguez_cv.pdf"}
