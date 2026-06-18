@@ -3,19 +3,10 @@ author: Daniel Amieva Rodriguez
 title: "Senior Data Engineer"
 format:
   classic-cv-pdf: 
-    linestretch: 1.25
-    geometry:
-      - top=20mm
-      - bottom=30mm
-      - left=20mm
-      - right=20mm
-    include-in-header:
-      text: |
-        \usepackage{parskip}
-        \setlength{\parskip}{6pt}
-        \widowpenalty=10000
-        \clubpenalty=10000
-        \raggedbottom
+    keep-tex: true
+    # NOTE: Spacing/geometry settings below are NOT applied by classic-cv-pdf template
+    # Actual spacing is controlled in _extensions/schochastics/classic-cv/template.tex
+    # Current settings: linespread 1.2, parskip 6pt, geometry 20/30/20/20mm
 cvfooter:
   left: "`r Sys.Date()`"
   right: "github.com/dar4datascience"
@@ -45,7 +36,7 @@ execute:
 
 # Relevant Employment History
 
-## TeamStation AI, Senior Data Engineer | 2024 - Present
+## TeamStation AI, Senior Data Engineer | 2025 - Present
 
 **Data Lake Architecture with Python ETL Packages**
 
@@ -59,7 +50,7 @@ Architected a medallion data lake (bronze/silver/gold) from scratch using Python
 
 **Technologies:** Python, SQL, AWS Glue, Step Functions, Lambda, DMS, DuckDB, GitHub Actions, Snowflake, Quarto, SAM IaC
 
-## Rackspace Technology, Business Intelligence Engineer IV | 2022 - 2024
+## Rackspace Technology, Business Intelligence Engineer IV | 2024 - 2025
 
 **Enterprise ETL Automation & API Integration**
 
@@ -81,7 +72,7 @@ Led BigQuery SQL performance tuning initiative and comprehensive decommissioning
 
 **Technologies:** Python, SQL, BigQuery, GitHub Actions, Power BI, Azure AD, Azure Monitor SDK, LeanIX, ServiceNow, SharePoint, Dataform, Tableau, Jira
 
-## Baz Super App, Senior BI Engineer | 2021 - 2022
+## Baz Super App, Senior BI Engineer | 2023 - 2024
 
 **Cross-Cloud Data Streaming & Marketing ETL**
 
@@ -95,7 +86,7 @@ Led sensitive financial data replication from AWS to BigQuery via Kafka streamin
 
 **Technologies:** Python, SQL, BigQuery, Kafka, AWS, GCP, GitHub Actions, CleverTap, Cloudera, Looker, Cloud Composer
 
-## DiDi Food, Data Engineer | BI Lead | 2020 - 2021
+## DiDi Food, Data Engineer | BI Lead | 2021 - 2023
 
 **Spark SQL Optimization & Analytics Automation**
 

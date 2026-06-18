@@ -59,7 +59,7 @@
 %	PAGE LAYOUT  DEFINITIONS
 %----------------------------------------------------------------------------------------
 \usepackage[a4paper]{geometry}		
-\geometry{top=20mm, bottom=30mm, left=20mm, right=20mm}
+\geometry{top=1.25cm, bottom=-.1cm, left=1.5cm, right=1.5cm} 	
 
 \usepackage{fancyhdr}				
 \pagestyle{fancy}
@@ -195,11 +195,6 @@
 \newcommand{\mystrut}{\rule[-.3\baselineskip]{0pt}{\baselineskip}}
 
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\linespread{1.2}\selectfont
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-\widowpenalty=10000
-\clubpenalty=10000
-\raggedbottom
 \begin{document}
 
 \pagestyle{fancy}
