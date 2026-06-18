@@ -8,7 +8,7 @@ format:
     # Actual spacing is controlled in _extensions/schochastics/classic-cv/template.tex
     # Current settings: linespread 1.2, parskip 6pt, geometry 20/30/20/20mm
 cvfooter:
-  left: "`r Sys.Date()`"
+  left: "2026-06-17"
   right: "github.com/dar4datascience"
 cvcolor: 4b0082
 cvfont: comfortaa
