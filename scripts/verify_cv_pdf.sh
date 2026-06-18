@@ -4,8 +4,8 @@
 
 set -e
 
-CV_PDF="${1:-cv types/dar_cv_homedepot_tailored_quarto.pdf}"
-TEX_FILE="${2:-homedepot_cv.tex}"
+CV_PDF="${1:-cv types/dar_cv_detailed.pdf}"
+TEX_FILE="${2:-detailed_cv.tex}"
 
 echo "=== CV PDF Quality Verification ==="
 echo ""

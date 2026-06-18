@@ -1,0 +1,168 @@
+---
+author: Daniel Amieva Rodriguez
+title: "Senior Data Engineer"
+format:
+  classic-cv-pdf: 
+    keep-tex: true
+    # NOTE: Spacing/geometry settings below are NOT applied by classic-cv-pdf template
+    # Actual spacing is controlled in _extensions/schochastics/classic-cv/template.tex
+    # Current settings: linespread 1.2, parskip 6pt, geometry 20/30/20/20mm
+cvfooter:
+  left: "2026-06-17"
+  right: "github.com/dar4datascience"
+cvcolor: 4b0082
+cvfont: comfortaa
+cvmeta:
+  - title: Contact
+    left: "linkedin.jobs.frequent526@passmail.net"
+    right: "Mexico City, Mexico"
+execute:
+  echo: false
+---
+
+# Summary
+
+6+ years engineering scalable data pipelines across AWS, GCP, and multi-cloud environments. Expert in Python scripting (modular packages, automation), advanced SQL (ETL design, query tuning, data modeling), and end-to-end pipeline architecture. Proven track record of cutting costs and accelerating delivery by owning projects autonomously — from architecture to CI/CD deployment. Strong communicator who bridges technical depth with business clarity.
+
+# Skills
+
+**Primary Technical Expertise:** Python Expert - Advanced software engineering, robust scripting, modular application development, ETL automation, AI API integration
+
+**Data Engineering Core:** SQL Proficiency - Solid database querying, ETL design, data modeling, data pipeline architecture, query optimization
+
+**Self-Starter & Autonomy:** Proven ability to take immediate ownership, work autonomously, drive projects forward with minimal hand-holding, deliver end-to-end solutions from architecture to CI/CD
+
+**Communication & Stakeholder Management:** Excellent communicator - Highly articulate in verbal and written form, ability to convey complex technical concepts clearly to both technical and non-technical stakeholders, effective dashboard creation through strong stakeholder collaboration
+
+**Languages and Frameworks:** Python, SQL, PySpark, Docker, GitHub, AI Tooling (APIs, MCP, LLM Integration)
+
+**Cloud & Platforms:** AWS (Glue, Lambda, Step Functions, DMS), GCP (BigQuery, Dataform, Cloud Composer), Azure, Cloudera
+
+**SCM, Build, CI/CD:** GitHub Actions, GitLab CI, Git, Jira, Confluence
+
+**Other:** ETL/ELT Pipeline Design, Data Modeling, OOP, REST APIs, Kafka, Spark, DuckDB, Presto, Data Governance, Agile, ThoughtSpot BI, NLQ (Natural Language Query)
+
+# Relevant Employment History
+
+## TeamStation AI, Senior Data Engineer | 2025 - Present
+
+**Enterprise Data Platform: Medallion Architecture & Python Automation**
+
+Architected a medallion data lake (bronze/silver/gold) from scratch using Python custom packages and AWS serverless stack (Glue, Step Functions, Lambda, DMS streaming). Replaced Spark-heavy jobs with DuckDB + Lambda architecture, achieving significant cost and performance improvements. Implemented comprehensive CI/CD automation and created AI-enhanced documentation for team knowledge sharing.
+
+**Activities and responsibilities:**
+
+- Architected medallion data lake (bronze/silver/gold) using Python custom packages, AWS Glue, Step Functions, and Lambda; replaced Spark-heavy jobs with DuckDB + Lambda, reducing compute costs ~40% and processing time by ~60% vs. equivalent Glue cluster approach
+- Automated ETL deployment via GitHub Actions CI/CD, eliminating ~200 hrs/year of manual release work and enabling same-day data pipeline iteration
+- Authored AI-enhanced Quarto technical documentation covering Step Functions, Lambdas, and custom Python packages for accelerated team onboarding and knowledge sharing
+
+**Technologies:** Python, SQL, PostgreSQL, AWS Glue, Step Functions, Lambda, DMS, DuckDB, GitHub Actions, Quarto, SAM IaC
+
+**Analytics Democratization: ThoughtSpot BI & Data Warehouse Architecture**
+
+Architected and implemented a strategic offloading of analytics workloads from the main application database into a dedicated PostgreSQL data warehouse, then integrated with ThoughtSpot BI to enable natural language querying (NLQ) for business stakeholders. This transformation shifted the organization from static reporting to self-service analytics, where non-technical users could generate their own insights through conversational queries. Successfully bridged technical implementation with stakeholder needs, delivering intuitive dashboard visualizations that improved decision-making speed across teams. Led requirements gathering sessions with business stakeholders to ensure dashboard designs aligned with actual analytical needs.
+
+**Activities and responsibilities:**
+
+- Architected data warehouse offloading strategy from main application to PostgreSQL, designing schemas and ETL pipelines that maintained data integrity while enabling performant analytics queries
+- Integrated ThoughtSpot BI platform with the new data warehouse, configuring natural language query capabilities that allowed business users to ask questions in plain English instead of writing SQL
+- Collaborated closely with stakeholders across departments to understand their analytical requirements, translating business needs into effective dashboard designs and data models
+- Delivered self-service analytics platform that reduced dependency on technical team for report generation, accelerating decision-making cycles
+
+**Technologies:** Python, SQL, PostgreSQL, ThoughtSpot BI, AWS, ETL Pipeline Design, Data Modeling, Stakeholder Communication
+
+## Rackspace Technology, Business Intelligence Engineer IV | 2024 - 2025
+
+**Enterprise ETL Automation & API Integration**
+
+Built comprehensive Python ETL pipelines programmatically executing SQL against BigQuery, connecting 10+ enterprise APIs including Azure Monitor SDK, LeanIX OData, ServiceNow, SharePoint, and Power BI. Developed the AskHR pipeline that ran hourly with zero manual intervention, enabling automated HR analytics. Onboarded team members to automation systems and mentored peers on GitHub workflows and deployment best practices.
+
+**Power BI CI/CD Pipeline (Self-Starter Initiative)**
+
+Independently identified a critical gap in the deployment process and designed an end-to-end Power BI CI/CD pipeline from scratch using Python, GitHub Actions, and Azure AD service principals. No prior pipeline existed for the organization's 90+ dashboards across 70+ workspaces. Self-navigated Azure AD group setup across multiple teams to establish proper service principal permissions. Cut deployment time from 60 minutes to 2 minutes, saving approximately 3 workdays of manual migration effort per release cycle.
+
+**SQL Optimization & Data Governance**
+
+Led BigQuery SQL performance tuning initiative and comprehensive decommissioning of stale assets including obsolete machines, data sources, and dashboards. Identified revenue leakage from development environment resources running in production. Implemented data governance policies and validation procedures for workspace and Jira hygiene. Estimated annual cost savings exceeding USD 1,000,000 from optimization and asset cleanup efforts — including over 1,500 engineering hours per year freed from repetitive maintenance tasks and redirected into innovation initiatives.
+
+**Activities and responsibilities:**
+
+- Built Python ETL pipelines programmatically executing SQL against BigQuery — connecting 10+ enterprise APIs (Azure Monitor SDK, LeanIX OData, SNOW, SharePoint, Power BI); AskHR pipeline ran hourly with zero manual intervention; onboarded team to automation systems and mentored peers on GitHub + deployment workflows
+- Independently identified gap, designed, and shipped end-to-end Power BI CI/CD (Python + GitHub Actions + Azure AD service principals) for 90+ dashboards across 70+ workspaces — no prior pipeline existed; self-navigated Azure AD group setup across teams; cut deployment from 60 min to 2 min, saving ~3 workdays of manual effort
+- Led BigQuery SQL performance tuning and stale asset decommissioning (machines, data sources, dashboards) — identified revenue leakage and resource waste, delivering estimated annual cost savings exceeding USD 1,000,000; freed over 1,500 engineering hours annually from repetitive maintenance work, redirecting human capital toward innovation and strategic projects
+
+**Technologies:** Python, SQL, BigQuery, GitHub Actions, Power BI, Azure AD, Azure Monitor SDK, LeanIX, ServiceNow, SharePoint, Dataform, Tableau, Jira
+
+## Baz Super App, Senior BI Engineer | 2023 - 2024
+
+**Enterprise Data Streaming: Cross-Cloud Financial Data Replication**
+
+Led sensitive financial data replication from AWS to BigQuery via Kafka streaming pipeline, requiring extensive coordination across security, cloud, and data teams to ensure compliant, real-time data availability. Managed end-to-end implementation including security compliance, data validation, and cross-functional stakeholder alignment.
+
+**Activities and responsibilities:**
+
+- Led sensitive financial data replication from AWS to BigQuery via a Kafka streaming pipeline — required coordinating across security, cloud, and data teams to ensure compliant, real-time data availability
+- Implemented data validation and monitoring to ensure accuracy of replicated financial data across cloud environments
+
+**Technologies:** Python, SQL, BigQuery, Kafka, AWS, GCP, Data Streaming, Data Security
+
+**Marketing Data Automation: CleverTap ETL & Self-Service Reporting**
+
+Built and automated a Python ETL pipeline ingesting CleverTap marketing event data into BigQuery, scheduled via GitHub Actions cron jobs. Designed end-to-end data reporting pipeline for marketing campaigns, delivering automated dashboards that replaced manual report generation for the marketing team — enabling self-serve campaign analytics.
+
+**Activities and responsibilities:**
+
+- Built and automated a Python ETL pipeline ingesting CleverTap marketing event data into BigQuery, scheduled via GitHub Actions cron — enabling self-serve marketing campaign reporting with zero manual extraction
+- Designed end-to-end data reporting pipeline for marketing campaigns on BigQuery, delivering automated dashboards that replaced manual report generation for the marketing team
+
+**Technologies:** Python, SQL, BigQuery, GitHub Actions, CleverTap, GCP, Cloud Composer, Marketing Analytics
+
+## DiDi Food, Data Engineer | BI Lead | 2021 - 2023
+
+**Spark SQL Performance Optimization**
+
+Tuned Spark SQL jobs via Python profiling and computation choke-point debugging, achieving 40% reduction in job execution time and improved data quality reliability at scale. Leveraged Presto for ad-hoc querying and utilized a custom internal Python module to configure and interact with Spark jobs in a restricted environment where external package downloads were prohibited.
+
+**Activities and responsibilities:**
+
+- Tuned Spark SQL jobs via Python profiling and computation choke-point debugging, achieving 40% reduction in job execution time and improved data quality reliability at scale
+- Utilized Presto for efficient ad-hoc data querying across large datasets
+- Worked within a "black box" environment using proprietary internal Python modules to configure Spark jobs and interact with internal systems, adapting to restricted tooling constraints
+
+**Technologies:** Python, SQL, Spark, Presto, Hive, Performance Optimization
+
+**Analytics Automation & Self-Service Reporting**
+
+Parameterized and automated SQL queries previously run manually by business users, saving approximately 100+ analyst hours per quarter and eliminating ad-hoc reporting bottlenecks. Maintained data governance policies ensuring integrity across customer experience analytics pipelines spanning SQL Server and AWS sources.
+
+**Activities and responsibilities:**
+
+- Parameterized and automated SQL queries previously run manually by business users, saving ~100+ analyst hours/quarter and eliminating ad-hoc reporting bottlenecks
+- Maintained data governance policies ensuring integrity across CX analytics pipelines (SQL Server + AWS sources)
+
+**Technologies:** Python, SQL, AWS, AWS Athena, AWS Glue, AWS S3, Airflow, dbt, Tableau, SQL Server, GitLab, Linux
+
+**Query Competency Program: Team Performance Optimization (Self-Starter Initiative)**
+
+Independently identified opportunity to improve team performance through enhanced querying capabilities. Designed and led training initiative to level up teammates' SQL and data querying skills, directly improving the team's internal performance score. By elevating team competency metrics, successfully unlocked additional computing resources allocation for the team — demonstrating how capability building translates into tangible infrastructure benefits.
+
+**Activities and responsibilities:**
+
+- Self-identified performance improvement opportunity and designed comprehensive training program to elevate team's data querying capabilities
+- Delivered hands-on training and mentoring to teammates, improving SQL proficiency and query optimization skills across the team
+- Achieved measurable improvement in team's internal performance grading system, directly resulting in unlocked computing resource allocation for enhanced analytics capacity
+
+**Technologies:** SQL, Data Analytics Training, Performance Optimization, Team Leadership, Presto, Hive
+
+# Certifications
+
+- **LLM Engineering with Structured Outputs:** Weights and Biases | 2025
+- **CI/CD for Machine Learning (GitOps):** Weights and Biases | 2024
+- **Azure AI Fundamentals:** Microsoft | 2024
+- **Applying Machine Learning and AI Services on AWS:** Cloud Academy | 2023
+- **Engineer Data in Google Cloud:** Google | 2023
+
+# Education
+
+- **Universidad Nacional Autonoma de Mexico** | 2019 - 2020 | Specialization, Data Science
+- **Universidad Nacional Autonoma de Mexico** | 2015 - 2021 | Bachelors, Economics
