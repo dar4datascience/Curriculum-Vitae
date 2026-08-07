@@ -8,7 +8,7 @@ format:
     # Actual spacing is controlled in _extensions/schochastics/classic-cv/template.tex
     # Current settings: linespread 1.2, parskip 6pt, geometry 20/30/20/20mm
 cvfooter:
-  left: "2026-06-17"
+  left: "`r Sys.Date()`"
   right: "github.com/dar4datascience"
 cvcolor: 4b0082
 cvfont: comfortaa
@@ -52,11 +52,11 @@ Architected a medallion data lake (bronze/silver/gold) from scratch using Python
 
 **Activities and responsibilities:**
 
-- Architected medallion data lake (bronze/silver/gold) using Python custom packages, AWS Glue, Step Functions, and Lambda; replaced Spark-heavy jobs with DuckDB + Lambda, reducing compute costs ~40% and processing time by ~60% vs. equivalent Glue cluster approach
-- Automated ETL deployment via GitHub Actions CI/CD, eliminating ~200 hrs/year of manual release work and enabling same-day data pipeline iteration
-- Authored AI-enhanced Quarto technical documentation covering Step Functions, Lambdas, and custom Python packages for accelerated team onboarding and knowledge sharing
+- Architected a ground-up medallion data lake (bronze/silver/gold) with custom Python packages and AWS serverless stack (Glue, Step Functions, Lambda, DMS streaming) — replaced Spark-heavy jobs with DuckDB + Lambda, cutting compute costs ~40% and processing time by ~60% vs. equivalent Glue cluster approach
+- Developed REST API endpoints using FastAPI and contributed to the Django backend application, owning end-to-end feature delivery — from API design and data integration through deployment — to ship application functionality to production
+- Built AI-enhanced Quarto documentation system covering Step Functions, Lambdas, and custom Python packages — leveraged AI to accelerate team onboarding and reduce knowledge transfer time across complex serverless architecture
 
-**Technologies:** Python, SQL, PostgreSQL, AWS Glue, Step Functions, Lambda, DMS, DuckDB, GitHub Actions, Quarto, SAM IaC
+**Technologies:** Python, SQL, PostgreSQL, AWS Glue, Step Functions, Lambda, DMS, DuckDB, GitHub Actions, Quarto, SAM IaC, FastAPI, Django
 
 **Analytics Democratization: ThoughtSpot BI & Data Warehouse Architecture**
 
