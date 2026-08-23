@@ -4,6 +4,7 @@ title: "Senior Data Engineer"
 format:
   classic-cv-pdf: 
     keep-tex: true
+    output-file: detailed_cv.pdf
     # NOTE: Spacing/geometry settings below are NOT applied by classic-cv-pdf template
     # Actual spacing is controlled in _extensions/schochastics/classic-cv/template.tex
     # Current settings: linespread 1.2, parskip 6pt, geometry 20/30/20/20mm
